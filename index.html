@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles/stylesheets/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Main page</title>
   </head>
 
@@ -21,7 +19,9 @@
 
          <!-- Logo -->
          <figure class="header__logo">
-           <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo">
+           <a class="header__logo-link" href="#">
+             <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo">
+           </a>
          </figure>
 
          <!-- Main nav -->
@@ -46,7 +46,9 @@
          </nav>
 
          <!-- Searching and contacts -->
-         <img class="header__searching" src="images/img_icon_magnifier.svg" alt="Search icon">
+         <button class="header__searching" href="#">
+           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon">
+         </button>
          <a class="header__button button" href="#">Contact us</a>
 
        </div>
@@ -65,10 +67,21 @@
 
            <ul class="slider__nav">
 
-             <li class="slider__nav-item slider__nav-item--active"></li>
-             <li class="slider__nav-item"></li>
-             <li class="slider__nav-item"></li>
-             <li class="slider__nav-item"></li>
+             <li class="slider__nav-item">
+               <button class="slider__nav-button slider__nav-button--active" type="button" name="button" value="1"></button>
+             </li>
+
+             <li class="slider__nav-item">
+               <button class="slider__nav-button" type="button" name="button" value="2"></button>
+             </li>
+
+             <li class="slider__nav-item">
+               <button class="slider__nav-button" type="button" name="button" value="3"></button>
+             </li>
+
+             <li class="slider__nav-item">
+               <button class="slider__nav-button" type="button" name="button" value="4"></button>
+             </li>
 
            </ul>
 
@@ -83,7 +96,7 @@
            </figure>
 
            <div class="slider__information">
-             Free (continental) USA shipping on all orders of $100 USD or more!
+             <span class="slider__information-content">Free (continental) USA shipping on all orders of $100 USD or more!</span>
            </div>
 
          </div>
@@ -99,32 +112,31 @@
 
            <ul class="categories__list">
 
-             <li class="categories__list-item categories__list-item--first">Apparel kids</li>
-             <li class="categories__list-item categories__list-item--second">Holiday shop</li>
-             <li class="categories__list-item categories__list-item--third">Toys</li>
-             <li class="categories__list-item categories__list-item--fourth">Accessories</li>
-
-           </ul>
-
-           <ul class="categories__nav">
-
-             <li class="categories__nav-item">
-                <button class="categories__nav-button" type="button" name="categories-left"></button>
+             <li class="categories__list-item categories__list-item--first">
+               <a class="categories__list-link" href="#">Apparel kids</a>
              </li>
 
-             <li class="categories__nav-item">
-               <button class="categories__nav-button" type="button" name="categories-left"></button>
+             <li class="categories__list-item categories__list-item--second">
+               <a class="categories__list-link" href="#">Holiday shop</a>
              </li>
 
-             <li class="categories__nav-item">
+             <li class="categories__list-item categories__list-item--third">
+               <a class="categories__list-link" href="#">Toys</a>
+             </li>
 
-               <p class="categories__nav-information">
-                 Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.
-               </p>
-
+             <li class="categories__list-item categories__list-item--fourth">
+               <a class="categories__list-link" href="#">Accessories</a>
              </li>
 
            </ul>
+
+           <!-- Category navigation -->
+           <button class="categories__button categories__button--left" type="button" name="categories-left"></button>
+           <button class="categories__button  categories__button--right" type="button" name="categories-right"></button>
+
+           <p class="categories__nav-information">
+             Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.
+           </p>
 
          </div>
 
@@ -135,17 +147,17 @@
 
          <div class="benefits__wrap">
 
-           <figure>
-             <img src="images/img_benefit_1.jpg" alt="Benefit image">
+           <figure class="benefits__side">
+             <img class="benefits__side-image" src="images/img_benefit_1.jpg" alt="Benefit image">
            </figure>
 
            <div class="benefits__information">
 
-             <header class="benefits__title">Delivery</header>
+             <h2 class="benefits__title">Delivery</h2>
 
              <ul class="benefits__list">
 
-               <li class="benefits__item">Delivery</li>
+               <li class="benefits__item benefits__item--active">Delivery</li>
                <li class="benefits__item">Guarantee</li>
                <li class="benefits__item">Credit</li>
 
@@ -196,42 +208,34 @@
 
        </section>
 
-     </main>
+       <!-- About -->
+       <section class="about">
 
-     <!-- About -->
-     <section class="about">
+         <div class="about__wrap">
 
-       <div class="about__wrap">
+           <!-- About -->
+           <article class="about__information">
 
-         <!-- About -->
-         <article class="about__information">
-
-           <header class="about__information-header">
-
-             <h3 class="about__information-title">
+             <h2 class="about__information-title">
                Design life kids
-             </h3>
+             </h2>
 
-           </header>
+             <span class="about__information-subtitle">About us</span>
 
-           <span class="about__information-subtitle">About us</span>
+             <p class="about__information-description">
+               Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.
+             </p>
 
-           <p class="about__information-description">
-             Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.
-           </p>
+             <a class="about__information-link button" href="#">Buy now</a>
 
-           <a class="about__information-link button" href="#">Buy now</a>
+           </article>
 
-         </article>
+           <!-- Contacts -->
+           <article class="about__contacts">
 
-         <!-- Contacts -->
-         <article class="about__contacts">
-
-           <header class="about__contacts-header">
-
-             <h3 class="about__contacts-title">
+             <h2 class="about__contacts-title">
                Contacts
-             </h3>
+             </h2>
 
              <p class="about__contacts-description">
                Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.
@@ -241,13 +245,13 @@
                <img class="about__contacts-image" src="images/img_map.jpg" alt="Map image">
              </figure>
 
-           </header>
-
-         </article>
+           </article>
 
        </div>
 
      </section>
+
+     </main>
 
      <!-- Footer -->
      <footer class="footer">
@@ -260,9 +264,9 @@
            <!-- Navigation -->
            <li class="footer__section">
 
-               <ul class="footer__section-list">
+             <h3 class="footer__section-title">Navigation</h3>
 
-                 <li class="footer__section-item">Navigation</li>
+               <ul class="footer__section-list">
 
                  <li class="footer__section-item">
                    <a class="footer__section-link" href="#">About us</a>
@@ -290,9 +294,9 @@
            <!-- Customer information -->
            <li class="footer__section">
 
-             <ul class="footer__section-list">
+             <h3 class="footer__section-title">Customer information</h3>
 
-               <li class="footer__section-item">Customer information</li>
+             <ul class="footer__section-list">
 
                <li class="footer__section-item">
                  <a class="footer__section-link" href="#">Contact us</a>
@@ -320,42 +324,34 @@
            <!-- Connect -->
            <li class="footer__section">
 
-             <ul class="footer__section-list">
+             <h3 class="footer__section-title">Connect</h3>
 
-               <li class="footer__section-item">Customer information</li>
+               <!-- Subscription -->
+               <form class="footer__section-form" method="post" action="handler.php">
+                 <input class="footer__section-input" type="text" name="mailto" value="" placeholder="Email">
+                 <button class="footer__section-button" type="submit" name="subscribe">Join</button>
+               </form>
 
-               <li class="footer__section-item">
+               <!-- Social -->
+               <ul class="footer__section-social social">
 
-                 <!-- Subscription -->
-                 <form class="footer__section-form" action="index.html" method="post">
-                   <input class="footer__section-input" type="text" name="mailto" value="" placeholder="Email">
-                   <button class="footer__section-button" type="submit" name="subscribe">Join</button>
-                 </form>
+                 <li class="social__item">
+                   <a class="social__link social__link--facebook" href="#" alt="Link to the Facebook"></a>
+                 </li>
 
-                 <!-- Social -->
-                 <ul class="footer__section-social social">
+                 <li class="social__item">
+                   <a class="social__link social__link--twitter" href="#" alt="Link to the Twitter"></a>
+                 </li>
 
-                   <li class="social__item">
-                     <a class="social__link social__link--facebook" href="#"></a>
-                   </li>
+                 <li class="social__item">
+                   <a class="social__link social__link--pinterest" href="#" alt="Link to the Pinterest"></a>
+                 </li>
 
-                   <li class="social__item">
-                     <a class="social__link social__link--twitter" href="#"></a>
-                   </li>
+                 <li class="social__item">
+                   <a class="social__link social__link--instagram" href="#" alt="Link to the Instagram"></a>
+                 </li>
 
-                   <li class="social__item">
-                     <a class="social__link social__link--pinterest" href="#"></a>
-                   </li>
-
-                   <li class="social__item">
-                     <a class="social__link social__link--instagram" href="#"></a>
-                   </li>
-
-                 </ul>
-
-               </li>
-
-             </ul>
+               </ul>
 
            </li>
 
@@ -365,7 +361,9 @@
          <ul class="footer__information">
 
            <li class="footer__information-item">
+
              <span class="footer__information-description">Company rating</span>
+
              <ul class="footer__information-list">
                <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
                <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
@@ -379,7 +377,7 @@
            <li class="footer__information-item">
 
              <span class="footer__information-copyright">
-               Copyright &#169 Dlk <span class="footer__information-dot"></span> Design life kids
+               Copyright &#169; Dlk <span class="footer__information-dot">&#183;</span> Design life kids
              </span>
 
            </li>
