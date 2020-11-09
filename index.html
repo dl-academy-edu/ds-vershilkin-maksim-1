@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru-en" dir="ltr">
+<html lang="en" dir="ltr">
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles/stylesheets/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Main page</title>
   </head>
@@ -19,7 +18,7 @@
 
          <!-- Logo -->
          <figure class="header__logo">
-           <a class="header__logo-link" href="#">
+           <a class="header__logo-link" href="/">
              <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo">
            </a>
          </figure>
@@ -30,11 +29,11 @@
            <ul class="header__nav-list">
 
              <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Blog</a>
+              <a class="header__nav-link" href="/blog.html">Blog</a>
              </li>
 
              <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Catalog</a>
+              <a class="header__nav-link" href="/catalog.html">Catalog</a>
              </li>
 
              <li class="header__nav-item">
@@ -46,10 +45,10 @@
          </nav>
 
          <!-- Searching and contacts -->
-         <button class="header__searching" href="#">
+         <button class="header__searching">
            <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon">
          </button>
-         <a class="header__button button" href="#">Contact us</a>
+         <a class="header__button button" href="/contacts.html">Contact us</a>
 
        </div>
 
@@ -184,6 +183,8 @@
 
          <div class="partners__wrap">
 
+           <h2 class="partners__title">Partners</h2>
+
            <ul class="partners__list">
 
              <li class="partners__item">
@@ -264,7 +265,7 @@
            <!-- Navigation -->
            <li class="footer__section">
 
-             <h3 class="footer__section-title">Navigation</h3>
+             <p class="footer__section-title">Navigation</p>
 
                <ul class="footer__section-list">
 
@@ -294,7 +295,7 @@
            <!-- Customer information -->
            <li class="footer__section">
 
-             <h3 class="footer__section-title">Customer information</h3>
+             <p class="footer__section-title">Customer information</p>
 
              <ul class="footer__section-list">
 
@@ -324,7 +325,7 @@
            <!-- Connect -->
            <li class="footer__section">
 
-             <h3 class="footer__section-title">Connect</h3>
+             <p class="footer__section-title">Connect</p>
 
                <!-- Subscription -->
                <form class="footer__section-form" method="post" action="handler.php">
@@ -336,19 +337,19 @@
                <ul class="footer__section-social social">
 
                  <li class="social__item">
-                   <a class="social__link social__link--facebook" href="#" alt="Link to the Facebook"></a>
+                   <a class="social__link social__link--facebook" href="#"></a>
                  </li>
 
                  <li class="social__item">
-                   <a class="social__link social__link--twitter" href="#" alt="Link to the Twitter"></a>
+                   <a class="social__link social__link--twitter" href="#"></a>
                  </li>
 
                  <li class="social__item">
-                   <a class="social__link social__link--pinterest" href="#" alt="Link to the Pinterest"></a>
+                   <a class="social__link social__link--pinterest" href="#"></a>
                  </li>
 
                  <li class="social__item">
-                   <a class="social__link social__link--instagram" href="#" alt="Link to the Instagram"></a>
+                   <a class="social__link social__link--instagram" href="#"></a>
                  </li>
 
                </ul>
@@ -395,6 +396,43 @@
        </div>
 
      </footer>
+
+     <!-- Popup feedback form -->
+     <section class="feedback">
+
+       <h2 class="feedback__title">Feedback form</h2>
+
+       <!-- Form -->
+       <form class="feedback__form" method="post" action="index.html">
+
+         <button class="feedback__close" type="button">
+           <img src="/images/img_icon_close.svg" alt="Crest icon">
+         </button>
+
+         <fieldset class="feedback__field">
+
+           <label class="feedback__label">Name</label>
+           <input class="feedback__input" type="text" name="name" value="" placeholder="Ivan Ivanov" required>
+
+           <label class="feedback__label">Phone</label>
+           <input class="feedback__input" type="tel" name="phone" value="" placeholder="+1 800 000 00 00" required>
+
+           <label class="feedback__label">Email</label>
+           <input  class="feedback__input" type="email" name="mail" value="" placeholder="hello@inbox.com" required>
+
+           <label class="feedback__label">Message</label>
+           <textarea class="feedback__message" name="message" rows="8" cols="80" required></textarea>
+
+           <input  class="feedback__input" type="checkbox" name="agreement" value="no">
+           <span class="feedback__informationz">By clicking on the button, you consent to the processing of your personal data</span>
+
+           <button class="feedback__button button" type="submit" name="send">Submit</button>
+
+         </fieldset>
+
+       </form>
+
+     </section>
 
 
   </body>

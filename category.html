@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Main page</title>
+  </head>
+
+  <body>
+
+     <!-- Header -->
+     <header class="header">
+
+       <div class="header__wrap">
+
+         <!-- Logo -->
+         <figure class="header__logo">
+           <a class="header__logo-link" href="/">
+             <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo">
+           </a>
+         </figure>
+
+         <!-- Main nav -->
+         <nav class="header__nav">
+
+           <ul class="header__nav-list">
+
+             <li class="header__nav-item">
+              <a class="header__nav-link" href="/blog.html">Blog</a>
+             </li>
+
+             <li class="header__nav-item">
+              <a class="header__nav-link" href="/catalog.html">Catalog</a>
+             </li>
+
+             <li class="header__nav-item">
+              <a class="header__nav-link" href="#">About us</a>
+             </li>
+
+           </ul>
+
+         </nav>
+
+         <!-- Searching and contacts -->
+         <button class="header__searching">
+           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon">
+         </button>
+         <a class="header__button button" href="/contacts.html">Contact us</a>
+
+       </div>
+
+     </header>
+
+     <!-- Main -->
+     <main class="main">
+
+       <section class="category">
+
+         <div class="category__wrap">
+
+           <h1 class="category__title">Toy for kids</h1>
+
+           <!-- Section navigation -->
+           <nav class="catalog__nav section-navigation">
+
+             <a class="section-navigation__link" href="/">Home</a>
+             <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon">
+             <a class="section-navigation__link" href="/catalog.html">Catalog</a>
+             <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon">
+             <a class="section-navigation__link section-navigation__link--active" href="#">Toys</a>
+
+           </nav>
+
+           <!-- Filter -->
+           <form class="category__form" action="index.html" method="post">
+
+             <ul class="category__form-list">
+
+               <!-- Cost -->
+               <li class="category__form-item">
+
+                 <label class="category__form-label">Cost</label>
+                 <div class="category__form-range-line">
+                   <div class="category__form-range-slider"></div>
+                 </div>
+                 <input type="text" class="category__form-range-min" name="minimum" value="0">
+                 <input type="text" class="category__form-range-max" name="maximum" value="500">
+
+               </li>
+
+               <!-- Color -->
+               <li class="category__form-item">
+
+                 <label class="category__form-label">Color</label>
+
+                 <ul class="category__form-color">
+
+                   <li class="category__form-color-item">
+                     <input type="checkbox" name="black" value="black" checked>Black
+                   </li>
+
+                   <li class="category__form-color-item">
+                     <input type="checkbox" name="blue" value="blue">Blue
+                   </li>
+
+                   <li class="category__form-color-item">
+                     <input type="checkbox" name="green" value="green">Green
+                   </li>
+
+                   <li class="category__form-color-item">
+                     <input type="checkbox" name="white" value="white">White
+                   </li>
+
+                 </ul>
+
+               </li>
+
+               <!-- Delivery -->
+               <li class="category__form-item">
+
+                 <label class="category__form-label">Delivery</label>
+
+                 <ul class="category__form-delivery">
+
+                   <li class="category__form-delivery-item">
+                     <input type="radio" name="delivery" value="free" checked>Free shipping
+                     <input type="radio" name="delivery" value="fast">Fast shipping
+                   </li>
+
+                 </ul>
+
+               </li>
+
+               <!-- Amount -->
+               <li>
+
+                 <label class="category__form-amount">Amount</label>
+
+                 <ul class="category__form-amount">
+
+                   <li class="category__form-amount-item">
+                     <button class="category__form-amount-item category__form-amount-item--active" type="button" name="button_1" value="0-5">0-5</button>
+                   </li>
+
+                   <li class="category__form-amount-item">
+                     <button class="category__form-amount-item" type="button" name="button_2" value="10-20">10-20</button>
+                   </li>
+
+                   <li class="category__form-amount-item">
+                     <button class="category__form-amount-item" type="button" name="button_3" value="20-50">20-50</button>
+                   </li>
+
+                 </ul>
+
+               </li>
+
+               <li class="category__form-amount-item">
+                 <button class="category__form-submit" type="submit" name="submit">Apply</button>
+               </li>
+
+
+
+             </ul>
+
+           </form>
+
+           <!-- List -->
+           <ul class="catalog__list">
+
+             <li class="catalog__item">
+
+               <div class="catalog__more">
+                 <a class="catalog__more-link" href="#">Learn more</a>
+               </div>
+
+               <figure class="catalog__figure">
+                 <img class="catalog__image" src="/images/img_item_1.png" alt="Sharky head image">
+               </figure>
+
+               <span class="catalog__name">Sharky bean bag chair cover</span>
+               <span class="catalog__price">&#36;60.00 usd</span>
+
+             </li>
+
+             <li class="catalog__item">
+
+               <div class="catalog__more">
+                 <a class="catalog__more-link" href="#">Learn more</a>
+               </div>
+
+               <figure class="catalog__figure">
+                 <img class="catalog__image" src="/images/img_item_2.png" alt="Brass deco image">
+               </figure>
+
+               <span class="catalog__name">Brass deco frames</span>
+               <span class="catalog__price">&#36;66.00 usd</span>
+
+             </li>
+
+             <li class="catalog__item">
+
+               <div class="catalog__more">
+                 <a class="catalog__more-link" href="#">Learn more</a>
+               </div>
+
+               <figure class="catalog__figure">
+                 <img class="catalog__image" src="/images/img_item_3.png" alt="Cibo full arpon image">
+               </figure>
+
+               <span class="catalog__name">Cibo full arpon</span>
+               <span class="catalog__price">&#36;60.00 usd</span>
+
+             </li>
+
+             <li class="catalog__item">
+
+               <div class="catalog__more">
+                 <a class="catalog__more-link" href="#">Learn more</a>
+               </div>
+
+               <figure class="catalog__figure">
+                 <img class="catalog__image" src="/images/img_item_4.png" alt="Gatch gatcha gumball machine image">
+               </figure>
+
+               <span class="catalog__name">Gatch gatcha gumball machine</span>
+               <span class="catalog__price">&#36;56.00 usd</span>
+
+             </li>
+
+             <li class="catalog__item">
+
+               <div class="catalog__more">
+                 <a class="catalog__more-link" href="#">Learn more</a>
+               </div>
+
+               <figure class="catalog__figure">
+                 <img class="catalog__image" src="/images/img_item_5.png" alt="Christmas advent scented candle image">
+               </figure>
+
+               <span class="catalog__name">Christmas advent scented candle</span>
+               <span class="catalog__price">&#36;29.00 usd</span>
+
+             </li>
+
+             <li class="catalog__item">
+
+               <div class="catalog__more">
+                 <a class="catalog__more-link" href="#">Learn more</a>
+               </div>
+
+               <figure class="catalog__figure">
+                 <img class="catalog__image" src="/images/img_item_6.png" alt="Tangle spinning tea light image">
+               </figure>
+
+               <span class="catalog__name">Tangle spinning tea light</span>
+               <span class="catalog__price">&#36;56.00 usd</span>
+
+             </li>
+
+           </ul>
+
+           <!-- Pagination -->
+           <div class="catalog__pagination pagination">
+
+             <button class="pagination__button pagination__button--previous" type="button" name="previous"></button>
+
+             <ul class="pagination__list">
+               <li class="pagination__item pagination__item--active">1</li>
+               <li class="pagination__item">2</li>
+               <li class="pagination__item">3</li>
+               <li class="pagination__item">4</li>
+             </ul>
+
+             <button class="pagination__button pagination__button--next" type="button" name="next"></button>
+
+           </div>
+
+         </div>
+
+       </section>
+
+     </main>
+
+     <!-- Footer -->
+     <footer class="footer">
+
+       <div class="footer__wrap">
+
+         <!-- Sections -->
+         <ul class="footer__sections">
+
+           <!-- Navigation -->
+           <li class="footer__section">
+
+             <p class="footer__section-title">Navigation</p>
+
+               <ul class="footer__section-list">
+
+                 <li class="footer__section-item">
+                   <a class="footer__section-link" href="#">About us</a>
+                 </li>
+                 <li class="footer__section-item">
+                   <a class="footer__section-link" href="#">Blog</a>
+                 </li>
+                 <li class="footer__section-item">
+                   <a class="footer__section-link" href="#">Design services</a>
+                 </li>
+                 <li class="footer__section-item">
+                   <a class="footer__section-link" href="#">Featured on</a>
+                 </li>
+                 <li class="footer__section-item">
+                   <a class="footer__section-link" href="#">2018 Holiday catalog</a>
+                 </li>
+                 <li class="footer__section-item">
+                   <a class="footer__section-link" href="#">Shop by designer</a>
+                 </li>
+
+              </ul>
+
+            </li>
+
+           <!-- Customer information -->
+           <li class="footer__section">
+
+             <p class="footer__section-title">Customer information</p>
+
+             <ul class="footer__section-list">
+
+               <li class="footer__section-item">
+                 <a class="footer__section-link" href="#">Contact us</a>
+               </li>
+               <li class="footer__section-item">
+                 <a class="footer__section-link" href="#">Sale exclusions</a>
+               </li>
+               <li class="footer__section-item">
+                 <a class="footer__section-link" href="#">Shipping & returns</a>
+               </li>
+               <li class="footer__section-item">
+                 <a class="footer__section-link" href="#">Terms & conditions</a>
+               </li>
+               <li class="footer__section-item">
+                 <a class="footer__section-link" href="#">Privacy policy</a>
+               </li>
+               <li class="footer__section-item">
+                 <a class="footer__section-link" href="#">Search</a>
+               </li>
+
+            </ul>
+
+          </li>
+
+           <!-- Connect -->
+           <li class="footer__section">
+
+             <p class="footer__section-title">Connect</p>
+
+               <!-- Subscription -->
+               <form class="footer__section-form" method="post" action="handler.php">
+                 <input class="footer__section-input" type="text" name="mailto" value="" placeholder="Email">
+                 <button class="footer__section-button" type="submit" name="subscribe">Join</button>
+               </form>
+
+               <!-- Social -->
+               <ul class="footer__section-social social">
+
+                 <li class="social__item">
+                   <a class="social__link social__link--facebook" href="#"></a>
+                 </li>
+
+                 <li class="social__item">
+                   <a class="social__link social__link--twitter" href="#"></a>
+                 </li>
+
+                 <li class="social__item">
+                   <a class="social__link social__link--pinterest" href="#"></a>
+                 </li>
+
+                 <li class="social__item">
+                   <a class="social__link social__link--instagram" href="#"></a>
+                 </li>
+
+               </ul>
+
+           </li>
+
+         </ul>
+
+         <!-- Additional information -->
+         <ul class="footer__information">
+
+           <li class="footer__information-item">
+
+             <span class="footer__information-description">Company rating</span>
+
+             <ul class="footer__information-list">
+               <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+               <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+               <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+               <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+               <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+             </ul>
+
+           </li>
+
+           <li class="footer__information-item">
+
+             <span class="footer__information-copyright">
+               Copyright &#169; Dlk <span class="footer__information-dot">&#183;</span> Design life kids
+             </span>
+
+           </li>
+
+           <li class="footer__information-item">
+
+             <span class="footer__information-owner">
+               Wed design - <a class="footer__information-developer" href="https://directlinedev.com/">Direct line development</a>
+             </span>
+
+           </li>
+
+         </ul>
+
+       </div>
+
+     </footer>
+
+  </body>
+
+</html>
