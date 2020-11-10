@@ -19,7 +19,7 @@
          <!-- Logo -->
          <figure class="header__logo">
            <a class="header__logo-link" href="/">
-             <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo">
+             <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo" width="100" height="52">
            </a>
          </figure>
 
@@ -46,7 +46,7 @@
 
          <!-- Searching and contacts -->
          <button class="header__searching">
-           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon">
+           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon" width="17" height="16">
          </button>
          <a class="header__button button" href="/contacts.html">Contact us</a>
 
@@ -67,9 +67,9 @@
            <nav class="catalog__nav section-navigation">
 
              <a class="section-navigation__link" href="/">Home</a>
-             <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon">
+             <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon" width="8" height="12">
              <a class="section-navigation__link" href="/catalog.html">Catalog</a>
-             <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon">
+             <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon" width="8" height="12">
              <a class="section-navigation__link section-navigation__link--active" href="#">Toys</a>
 
            </nav>
@@ -77,93 +77,93 @@
            <!-- Filter -->
            <form class="category__form" action="index.html" method="post">
 
-             <ul class="category__form-list">
-
                <!-- Cost -->
-               <li class="category__form-item">
+               <fieldset class="category__form-field">
 
-                 <label class="category__form-label">Cost</label>
-                 <div class="category__form-range-line">
-                   <div class="category__form-range-slider"></div>
-                 </div>
-                 <input type="text" class="category__form-range-min" name="minimum" value="0">
-                 <input type="text" class="category__form-range-max" name="maximum" value="500">
+                 <legend class="category__form-legend">Cost</legend>
 
-               </li>
+                 <input id="cost" class="category__form-cost" type="range" name="cost" value="0" min="0" max="500">
+                 <span class="category__form-min">0</span>
+                 <span class="category__form-max">500</span>
+
+               </fieldset>
 
                <!-- Color -->
-               <li class="category__form-item">
+               <fieldset class="category__form-field">
 
-                 <label class="category__form-label">Color</label>
+                 <legend class="category__form-legend">Color</legend>
 
                  <ul class="category__form-color">
 
                    <li class="category__form-color-item">
-                     <input type="checkbox" name="black" value="black" checked>Black
+                     <input class="category__form-input" id="color_1" type="checkbox" name="color" value="black" checked>
+                     <label for="color_1">Black</label>
                    </li>
 
                    <li class="category__form-color-item">
-                     <input type="checkbox" name="blue" value="blue">Blue
+                     <input class="category__form-input" id="color_2" type="checkbox" name="color" value="blue">
+                     <label for="color_2">Blue</label>
                    </li>
 
                    <li class="category__form-color-item">
-                     <input type="checkbox" name="green" value="green">Green
+                     <input class="category__form-input" id="color_3" type="checkbox" name="color" value="green">
+                     <label for="color_3">Green</label>
                    </li>
 
                    <li class="category__form-color-item">
-                     <input type="checkbox" name="white" value="white">White
+                     <input class="category__form-input" id="color_4" type="checkbox" name="color" value="white">
+                     <label for="color_4">White</label>
                    </li>
 
                  </ul>
 
-               </li>
+               </fieldset>
 
                <!-- Delivery -->
-               <li class="category__form-item">
+               <fieldset class="category__form-field">
 
-                 <label class="category__form-label">Delivery</label>
+                 <legend class="category__form-legend">Delivery</legend>
 
                  <ul class="category__form-delivery">
 
                    <li class="category__form-delivery-item">
-                     <input type="radio" name="delivery" value="free" checked>Free shipping
-                     <input type="radio" name="delivery" value="fast">Fast shipping
+                     <input class="category__form-input" id="free" type="radio" name="delivery" value="free" checked>
+                     <label for="free">Free shipping</label>
+                   </li>
+
+                   <li class="category__form-delivery-item">
+                     <input class="category__form-input" id="fast" type="radio" name="delivery" value="fast">
+                     <label for="fast">Fast shipping</label>
                    </li>
 
                  </ul>
 
-               </li>
+               </fieldset>
 
                <!-- Amount -->
-               <li>
+               <fieldset class="category__form-field">
 
-                 <label class="category__form-amount">Amount</label>
+                 <legend class="category__form-legend">Amount</legend>
 
                  <ul class="category__form-amount">
 
                    <li class="category__form-amount-item">
-                     <button class="category__form-amount-item category__form-amount-item--active" type="button" name="button_1" value="0-5">0-5</button>
+                     <input class="category__form-amount-item category__form-amount-item--active" type="text" name="amount" value="0-5" checked>
                    </li>
 
                    <li class="category__form-amount-item">
-                     <button class="category__form-amount-item" type="button" name="button_2" value="10-20">10-20</button>
+                     <input class="category__form-amount-item" type="text" name="amount" value="10-20">
                    </li>
 
                    <li class="category__form-amount-item">
-                     <button class="category__form-amount-item" type="button" name="button_3" value="20-50">20-50</button>
+                     <input class="category__form-amount-item" type="text" name="amount" value="20-50">
                    </li>
 
                  </ul>
 
-               </li>
+               </fieldset>
 
-               <li class="category__form-amount-item">
-                 <button class="category__form-submit" type="submit" name="submit">Apply</button>
-               </li>
-
-
-
-             </ul>
+               <button class="category__form-submit" type="submit" name="submit">Apply</button>
 
            </form>
 
@@ -172,12 +172,12 @@
 
              <li class="catalog__item">
 
-               <div class="catalog__more">
-                 <a class="catalog__more-link" href="#">Learn more</a>
-               </div>
+               <a class="catalog__more" href="#">
+                 <div class="catalog__more-text">Learn more</div>
+               </a>
 
                <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_1.png" alt="Sharky head image">
+                 <img class="catalog__image" src="/images/img_item_1.png" alt="Sharky head image" width="380" height="385">
                </figure>
 
                <span class="catalog__name">Sharky bean bag chair cover</span>
@@ -187,12 +187,12 @@
 
              <li class="catalog__item">
 
-               <div class="catalog__more">
-                 <a class="catalog__more-link" href="#">Learn more</a>
-               </div>
+               <a class="catalog__more" href="#">
+                 <div class="catalog__more-text">Learn more</div>
+               </a>
 
                <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_2.png" alt="Brass deco image">
+                 <img class="catalog__image" src="/images/img_item_2.png" alt="Brass deco image" width="380" height="385">
                </figure>
 
                <span class="catalog__name">Brass deco frames</span>
@@ -202,12 +202,12 @@
 
              <li class="catalog__item">
 
-               <div class="catalog__more">
-                 <a class="catalog__more-link" href="#">Learn more</a>
-               </div>
+               <a class="catalog__more" href="#">
+                 <div class="catalog__more-text">Learn more</div>
+               </a>
 
                <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_3.png" alt="Cibo full arpon image">
+                 <img class="catalog__image" src="/images/img_item_3.png" alt="Cibo full arpon image" width="380" height="385">
                </figure>
 
                <span class="catalog__name">Cibo full arpon</span>
@@ -217,12 +217,12 @@
 
              <li class="catalog__item">
 
-               <div class="catalog__more">
-                 <a class="catalog__more-link" href="#">Learn more</a>
-               </div>
+               <a class="catalog__more" href="#">
+                 <div class="catalog__more-text">Learn more</div>
+               </a>
 
                <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_4.png" alt="Gatch gatcha gumball machine image">
+                 <img class="catalog__image" src="/images/img_item_4.png" alt="Gatch gatcha gumball machine image" width="380" height="385">
                </figure>
 
                <span class="catalog__name">Gatch gatcha gumball machine</span>
@@ -232,12 +232,12 @@
 
              <li class="catalog__item">
 
-               <div class="catalog__more">
-                 <a class="catalog__more-link" href="#">Learn more</a>
-               </div>
+               <a class="catalog__more" href="#">
+                 <div class="catalog__more-text">Learn more</div>
+               </a>
 
                <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_5.png" alt="Christmas advent scented candle image">
+                 <img class="catalog__image" src="/images/img_item_5.png" alt="Christmas advent scented candle image" width="380" height="385">
                </figure>
 
                <span class="catalog__name">Christmas advent scented candle</span>
@@ -247,12 +247,12 @@
 
              <li class="catalog__item">
 
-               <div class="catalog__more">
-                 <a class="catalog__more-link" href="#">Learn more</a>
-               </div>
+               <a class="catalog__more" href="#">
+                 <div class="catalog__more-text">Learn more</div>
+               </a>
 
                <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_6.png" alt="Tangle spinning tea light image">
+                 <img class="catalog__image" src="/images/img_item_6.png" alt="Tangle spinning tea light image" width="380" height="385">
                </figure>
 
                <span class="catalog__name">Tangle spinning tea light</span>

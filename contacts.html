@@ -18,7 +18,7 @@
         <!-- Logo -->
         <figure class="header__logo">
           <a class="header__logo-link" href="/">
-            <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo">
+            <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo" width="100" height="52">
           </a>
         </figure>
 
@@ -45,7 +45,7 @@
 
         <!-- Searching and contacts -->
         <button class="header__searching">
-          <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon">
+          <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon" width="17" height="16">
         </button>
         <a class="header__button button" href="#">Contact us</a>
 
@@ -67,7 +67,7 @@
           <nav class="catalog__nav section-navigation">
 
             <a class="section-navigation__link" href="/">Home</a>
-            <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon">
+            <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon" width="8" height="12">
             <a class="section-navigation__link" href="/contacts.html">Contact us</a>
 
           </nav>
@@ -82,19 +82,19 @@
 
               <fieldset class="contacts__feedback-field">
 
-                <label class="contacts__feedback-label">Name</label>
-                <input class="contacts__feedback-input" type="text" name="name" value="" placeholder="Ivan Ivanov" required>
+                <label for="name" class="contacts__feedback-label">Name</label>
+                <input class="contacts__feedback-input" id="name" type="text" name="name" value="" placeholder="Ivan Ivanov" required>
 
-                <label class="contacts__feedback-label">Phone</label>
-                <input class="contacts__feedback-input" type="tel" name="phone" value="" placeholder="+1 800 000 00 00" required>
+                <label for="phone" class="contacts__feedback-label">Phone</label>
+                <input class="contacts__feedback-input" id="phone" type="tel" name="phone" value="" placeholder="+1 800 000 00 00" required>
 
-                <label class="contacts__feedback-label">Email</label>
-                <input  class="contacts__feedback-input" type="email" name="mail" value="" placeholder="hello@inbox.com" required>
+                <label for="mail" class="contacts__feedback-label">Email</label>
+                <input  class="contacts__feedback-input" id="mail" type="email" name="mail" value="" placeholder="hello@inbox.com" required>
 
-                <label class="contacts__feedback-label">Message</label>
-                <textarea class="contacts__feedback-textarea" name="message" rows="8" cols="80" required></textarea>
+                <label for="message" class="contacts__feedback-label">Message</label>
+                <textarea class="contacts__feedback-textarea" id="message" name="message" rows="8" cols="80" required></textarea>
 
-                <input class="contacts__feedback-input" type="checkbox" name="agreement" value="yes" checked>
+                <input class="contacts__feedback-input" type="checkbox" name="agreement" value="yes" checked required>
                 <span class="contacts__feedback-information">By clicking on the button, you consent to the processing of your personal data</span>
 
                 <button class="contacts__feedback-button button" type="submit" name="send">Submit</button>
@@ -104,17 +104,21 @@
             </form>
 
             <!-- Addition information -->
-            <p class="contacts__information">
-              Our support team are on-hand to assist with any issues you are experiencing.
-            </p>
+            <div class="contacts__information-wrap">
 
-            <p class="contacts__information">
-              Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
-            </p>
+              <p class="contacts__information">
+                Our support team are on-hand to assist with any issues you are experiencing.
+              </p>
 
-            <p class="contacts__information contacts__information--highlighted">
-              An expert is waiting to help you!
-            </p>
+              <p class="contacts__information">
+                Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
+              </p>
+
+              <p class="contacts__information contacts__information--highlighted">
+                An expert is waiting to help you!
+              </p>
+
+            </div>
 
           </section>
 

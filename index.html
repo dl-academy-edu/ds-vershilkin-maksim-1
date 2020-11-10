@@ -19,7 +19,7 @@
          <!-- Logo -->
          <figure class="header__logo">
            <a class="header__logo-link" href="/">
-             <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo">
+             <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo" width="100" height="52">
            </a>
          </figure>
 
@@ -46,7 +46,7 @@
 
          <!-- Searching and contacts -->
          <button class="header__searching">
-           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon">
+           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon" width="17" height="16">
          </button>
          <a class="header__button button" href="/contacts.html">Contact us</a>
 
@@ -91,7 +91,7 @@
            <a class="slider__button button" href="#">Explore now</a>
 
            <figure class="slider__stuff-wrap">
-             <img class="slider__stuff-image" src="images/img_slide_1.png" alt="Toy image">
+             <img class="slider__stuff-image" src="images/img_slide_1.png" alt="Toy image" width="636" height="461">
            </figure>
 
            <div class="slider__information">
@@ -147,7 +147,7 @@
          <div class="benefits__wrap">
 
            <figure class="benefits__side">
-             <img class="benefits__side-image" src="images/img_benefit_1.jpg" alt="Benefit image">
+             <img class="benefits__side-image" src="images/img_benefit_1.jpg" alt="Benefit image" width="480" height="559">
            </figure>
 
            <div class="benefits__information">
@@ -188,19 +188,19 @@
            <ul class="partners__list">
 
              <li class="partners__item">
-               <img class="partners__image" src="images/img_partner_1.png" alt="Mail group logo">
+               <img class="partners__image" src="images/img_partner_1.png" alt="Mail group logo" width="193" height="60">
              </li>
 
              <li class="partners__item">
-               <img class="partners__image" src="images/img_partner_2.png" alt="Apple logo">
+               <img class="partners__image" src="images/img_partner_2.png" alt="Apple logo" width="179" height="61">
              </li>
 
              <li class="partners__item">
-               <img class="partners__image" src="images/img_partner_3.png" alt="Eltex logo">
+               <img class="partners__image" src="images/img_partner_3.png" alt="Eltex logo" width="216" height="46">
              </li>
 
              <li class="partners__item">
-               <img class="partners__image" src="images/img_partner_4.png" alt="Owox logo">
+               <img class="partners__image" src="images/img_partner_4.png" alt="Owox logo" width="211" height="40">
              </li>
 
            </ul>
@@ -411,19 +411,19 @@
 
          <fieldset class="feedback__field">
 
-           <label class="feedback__label">Name</label>
-           <input class="feedback__input" type="text" name="name" value="" placeholder="Ivan Ivanov" required>
+           <label for="name" class="feedback__label">Name</label>
+           <input class="feedback__input" id="name" type="text" name="name" value="" placeholder="Ivan Ivanov" required>
 
-           <label class="feedback__label">Phone</label>
-           <input class="feedback__input" type="tel" name="phone" value="" placeholder="+1 800 000 00 00" required>
+           <label for="phone" class="feedback__label">Phone</label>
+           <input class="feedback__input" id="phone" type="tel" name="phone" value="" placeholder="+1 800 000 00 00" required>
 
-           <label class="feedback__label">Email</label>
-           <input  class="feedback__input" type="email" name="mail" value="" placeholder="hello@inbox.com" required>
+           <label for="mail" class="feedback__label">Email</label>
+           <input  class="feedback__input" id="mail" type="email" name="mail" value="" placeholder="hello@inbox.com" required>
 
-           <label class="feedback__label">Message</label>
-           <textarea class="feedback__message" name="message" rows="8" cols="80" required></textarea>
+           <label for="message" class="feedback__label">Message</label>
+           <textarea class="feedback__message" id="message" name="message" rows="8" cols="80" required></textarea>
 
-           <input  class="feedback__input" type="checkbox" name="agreement" value="no">
+           <input class="feedback__input" type="checkbox" name="agreement" required>
            <span class="feedback__informationz">By clicking on the button, you consent to the processing of your personal data</span>
 
            <button class="feedback__button button" type="submit" name="send">Submit</button>
