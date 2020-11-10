@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Feedback page</title>
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <div class="header__wrap">
+
+        <!-- Logo -->
+        <figure class="header__logo">
+          <a class="header__logo-link" href="/">
+            <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo" width="100" height="52">
+          </a>
+        </figure>
+
+        <!-- Main nav -->
+        <nav class="header__nav">
+
+          <ul class="header__nav-list">
+
+            <li class="header__nav-item">
+             <a class="header__nav-link" href="/blog.html">Blog</a>
+            </li>
+
+            <li class="header__nav-item">
+             <a class="header__nav-link" href="/catalog.html">Catalog</a>
+            </li>
+
+            <li class="header__nav-item">
+             <a class="header__nav-link" href="#">About us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <!-- Searching and contacts -->
+        <button class="header__searching">
+          <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon" width="17" height="16">
+        </button>
+        <a class="header__button button" href="#">Contact us</a>
+
+      </div>
+
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+      Contacts
+      <section class="contacts">
+
+        <div class="contacts__wrap">
+
+          <h1 class="contacts__title">Contact us</h1>
+
+          <!-- Section navigation -->
+          <nav class="catalog__nav section-navigation">
+
+            <a class="section-navigation__link" href="/">Home</a>
+            <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon" width="8" height="12">
+            <a class="section-navigation__link" href="/contacts.html">Contact us</a>
+
+          </nav>
+
+          <!-- Feedback form -->
+          <section class="contacts__feedback">
+
+            <h2 class="contacts__feedback-title">Feedback form</h2>
+
+            <!-- Form -->
+            <form class="contacts__feedback-form" method="post" action="index.html">
+
+              <fieldset class="contacts__feedback-field">
+
+                <label for="name" class="contacts__feedback-label">Name</label>
+                <input class="contacts__feedback-input" id="name" type="text" name="name" value="" placeholder="Ivan Ivanov" required>
+
+                <label for="phone" class="contacts__feedback-label">Phone</label>
+                <input class="contacts__feedback-input" id="phone" type="tel" name="phone" value="" placeholder="+1 800 000 00 00" required>
+
+                <label for="mail" class="contacts__feedback-label">Email</label>
+                <input  class="contacts__feedback-input" id="mail" type="email" name="mail" value="" placeholder="hello@inbox.com" required>
+
+                <label for="message" class="contacts__feedback-label">Message</label>
+                <textarea class="contacts__feedback-textarea" id="message" name="message" rows="8" cols="80" required></textarea>
+
+                <input class="contacts__feedback-input" type="checkbox" name="agreement" value="yes" checked required>
+                <span class="contacts__feedback-information">By clicking on the button, you consent to the processing of your personal data</span>
+
+                <button class="contacts__feedback-button button" type="submit" name="send">Submit</button>
+
+              </fieldset>
+
+            </form>
+
+            <!-- Addition information -->
+            <div class="contacts__information-wrap">
+
+              <p class="contacts__information">
+                Our support team are on-hand to assist with any issues you are experiencing.
+              </p>
+
+              <p class="contacts__information">
+                Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
+              </p>
+
+              <p class="contacts__information contacts__information--highlighted">
+                An expert is waiting to help you!
+              </p>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+      <div class="footer__wrap">
+
+        <!-- Sections -->
+        <ul class="footer__sections">
+
+          <!-- Navigation -->
+          <li class="footer__section">
+
+            <p class="footer__section-title">Navigation</p>
+
+              <ul class="footer__section-list">
+
+                <li class="footer__section-item">
+                  <a class="footer__section-link" href="#">About us</a>
+                </li>
+                <li class="footer__section-item">
+                  <a class="footer__section-link" href="#">Blog</a>
+                </li>
+                <li class="footer__section-item">
+                  <a class="footer__section-link" href="#">Design services</a>
+                </li>
+                <li class="footer__section-item">
+                  <a class="footer__section-link" href="#">Featured on</a>
+                </li>
+                <li class="footer__section-item">
+                  <a class="footer__section-link" href="#">2018 Holiday catalog</a>
+                </li>
+                <li class="footer__section-item">
+                  <a class="footer__section-link" href="#">Shop by designer</a>
+                </li>
+
+             </ul>
+
+           </li>
+
+          <!-- Customer information -->
+          <li class="footer__section">
+
+            <p class="footer__section-title">Customer information</p>
+
+            <ul class="footer__section-list">
+
+              <li class="footer__section-item">
+                <a class="footer__section-link" href="#">Contact us</a>
+              </li>
+              <li class="footer__section-item">
+                <a class="footer__section-link" href="#">Sale exclusions</a>
+              </li>
+              <li class="footer__section-item">
+                <a class="footer__section-link" href="#">Shipping & returns</a>
+              </li>
+              <li class="footer__section-item">
+                <a class="footer__section-link" href="#">Terms & conditions</a>
+              </li>
+              <li class="footer__section-item">
+                <a class="footer__section-link" href="#">Privacy policy</a>
+              </li>
+              <li class="footer__section-item">
+                <a class="footer__section-link" href="#">Search</a>
+              </li>
+
+           </ul>
+
+         </li>
+
+          <!-- Connect -->
+          <li class="footer__section">
+
+            <p class="footer__section-title">Connect</p>
+
+              <!-- Subscription -->
+              <form class="footer__section-form" method="post" action="handler.php">
+                <input class="footer__section-input" type="text" name="mailto" value="" placeholder="Email">
+                <button class="footer__section-button" type="submit" name="subscribe">Join</button>
+              </form>
+
+              <!-- Social -->
+              <ul class="footer__section-social social">
+
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#"></a>
+                </li>
+
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="#"></a>
+                </li>
+
+                <li class="social__item">
+                  <a class="social__link social__link--pinterest" href="#"></a>
+                </li>
+
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#"></a>
+                </li>
+
+              </ul>
+
+          </li>
+
+        </ul>
+
+        <!-- Additional information -->
+        <ul class="footer__information">
+
+          <li class="footer__information-item">
+
+            <span class="footer__information-description">Company rating</span>
+
+            <ul class="footer__information-list">
+              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
+            </ul>
+
+          </li>
+
+          <li class="footer__information-item">
+
+            <span class="footer__information-copyright">
+              Copyright &#169; Dlk <span class="footer__information-dot">&#183;</span> Design life kids
+            </span>
+
+          </li>
+
+          <li class="footer__information-item">
+
+            <span class="footer__information-owner">
+              Wed design - <a class="footer__information-developer" href="https://directlinedev.com/">Direct line development</a>
+            </span>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>

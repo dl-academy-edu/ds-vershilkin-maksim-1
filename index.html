@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru-en" dir="ltr">
+<html lang="en" dir="ltr">
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles/stylesheets/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Main page</title>
   </head>
@@ -19,8 +18,8 @@
 
          <!-- Logo -->
          <figure class="header__logo">
-           <a class="header__logo-link" href="#">
-             <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo">
+           <a class="header__logo-link" href="/">
+             <img class="header__logo-image" src="images/img_logo.svg" alt="Company's logo" width="100" height="52">
            </a>
          </figure>
 
@@ -30,11 +29,11 @@
            <ul class="header__nav-list">
 
              <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Blog</a>
+              <a class="header__nav-link" href="/blog.html">Blog</a>
              </li>
 
              <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Catalog</a>
+              <a class="header__nav-link" href="/catalog.html">Catalog</a>
              </li>
 
              <li class="header__nav-item">
@@ -46,10 +45,10 @@
          </nav>
 
          <!-- Searching and contacts -->
-         <button class="header__searching" href="#">
-           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon">
+         <button class="header__searching">
+           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon" width="17" height="16">
          </button>
-         <a class="header__button button" href="#">Contact us</a>
+         <a class="header__button button" href="/contacts.html">Contact us</a>
 
        </div>
 
@@ -92,7 +91,7 @@
            <a class="slider__button button" href="#">Explore now</a>
 
            <figure class="slider__stuff-wrap">
-             <img class="slider__stuff-image" src="images/img_slide_1.png" alt="Toy image">
+             <img class="slider__stuff-image" src="images/img_slide_1.png" alt="Toy image" width="636" height="461">
            </figure>
 
            <div class="slider__information">
@@ -148,7 +147,7 @@
          <div class="benefits__wrap">
 
            <figure class="benefits__side">
-             <img class="benefits__side-image" src="images/img_benefit_1.jpg" alt="Benefit image">
+             <img class="benefits__side-image" src="images/img_benefit_1.jpg" alt="Benefit image" width="480" height="559">
            </figure>
 
            <div class="benefits__information">
@@ -184,22 +183,24 @@
 
          <div class="partners__wrap">
 
+           <h2 class="partners__title">Partners</h2>
+
            <ul class="partners__list">
 
              <li class="partners__item">
-               <img class="partners__image" src="images/img_partner_1.png" alt="Mail group logo">
+               <img class="partners__image" src="images/img_partner_1.png" alt="Mail group logo" width="193" height="60">
              </li>
 
              <li class="partners__item">
-               <img class="partners__image" src="images/img_partner_2.png" alt="Apple logo">
+               <img class="partners__image" src="images/img_partner_2.png" alt="Apple logo" width="179" height="61">
              </li>
 
              <li class="partners__item">
-               <img class="partners__image" src="images/img_partner_3.png" alt="Eltex logo">
+               <img class="partners__image" src="images/img_partner_3.png" alt="Eltex logo" width="216" height="46">
              </li>
 
              <li class="partners__item">
-               <img class="partners__image" src="images/img_partner_4.png" alt="Owox logo">
+               <img class="partners__image" src="images/img_partner_4.png" alt="Owox logo" width="211" height="40">
              </li>
 
            </ul>
@@ -264,7 +265,7 @@
            <!-- Navigation -->
            <li class="footer__section">
 
-             <h3 class="footer__section-title">Navigation</h3>
+             <p class="footer__section-title">Navigation</p>
 
                <ul class="footer__section-list">
 
@@ -294,7 +295,7 @@
            <!-- Customer information -->
            <li class="footer__section">
 
-             <h3 class="footer__section-title">Customer information</h3>
+             <p class="footer__section-title">Customer information</p>
 
              <ul class="footer__section-list">
 
@@ -324,7 +325,7 @@
            <!-- Connect -->
            <li class="footer__section">
 
-             <h3 class="footer__section-title">Connect</h3>
+             <p class="footer__section-title">Connect</p>
 
                <!-- Subscription -->
                <form class="footer__section-form" method="post" action="handler.php">
@@ -336,19 +337,19 @@
                <ul class="footer__section-social social">
 
                  <li class="social__item">
-                   <a class="social__link social__link--facebook" href="#" alt="Link to the Facebook"></a>
+                   <a class="social__link social__link--facebook" href="#"></a>
                  </li>
 
                  <li class="social__item">
-                   <a class="social__link social__link--twitter" href="#" alt="Link to the Twitter"></a>
+                   <a class="social__link social__link--twitter" href="#"></a>
                  </li>
 
                  <li class="social__item">
-                   <a class="social__link social__link--pinterest" href="#" alt="Link to the Pinterest"></a>
+                   <a class="social__link social__link--pinterest" href="#"></a>
                  </li>
 
                  <li class="social__item">
-                   <a class="social__link social__link--instagram" href="#" alt="Link to the Instagram"></a>
+                   <a class="social__link social__link--instagram" href="#"></a>
                  </li>
 
                </ul>
@@ -395,6 +396,43 @@
        </div>
 
      </footer>
+
+     <!-- Popup feedback form -->
+     <section class="feedback">
+
+       <h2 class="feedback__title">Feedback form</h2>
+
+       <!-- Form -->
+       <form class="feedback__form" method="post" action="index.html">
+
+         <button class="feedback__close" type="button">
+           <img src="/images/img_icon_close.svg" alt="Crest icon">
+         </button>
+
+         <fieldset class="feedback__field">
+
+           <label for="name" class="feedback__label">Name</label>
+           <input class="feedback__input" id="name" type="text" name="name" value="" placeholder="Ivan Ivanov" required>
+
+           <label for="phone" class="feedback__label">Phone</label>
+           <input class="feedback__input" id="phone" type="tel" name="phone" value="" placeholder="+1 800 000 00 00" required>
+
+           <label for="mail" class="feedback__label">Email</label>
+           <input  class="feedback__input" id="mail" type="email" name="mail" value="" placeholder="hello@inbox.com" required>
+
+           <label for="message" class="feedback__label">Message</label>
+           <textarea class="feedback__message" id="message" name="message" rows="8" cols="80" required></textarea>
+
+           <input class="feedback__input" type="checkbox" name="agreement" required>
+           <span class="feedback__informationz">By clicking on the button, you consent to the processing of your personal data</span>
+
+           <button class="feedback__button button" type="submit" name="send">Submit</button>
+
+         </fieldset>
+
+       </form>
+
+     </section>
 
 
   </body>
