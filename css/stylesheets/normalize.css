@@ -1,0 +1,29 @@
+/* line 28, ../sass/normalize.scss */
+:root {
+  font-size: 1em;
+}
+
+/* line 33, ../sass/normalize.scss */
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+/* line 38, ../sass/normalize.scss */
+body, p, h1, h2, h3, h4, h5, h6, figure, button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* line 47, ../sass/normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 51, ../sass/normalize.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

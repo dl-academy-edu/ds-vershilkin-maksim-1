@@ -1,0 +1,54 @@
+/* line 28, ../sass/normalize.scss */
+:root {
+  font-size: 1em;
+}
+
+/* line 33, ../sass/normalize.scss */
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+/* line 38, ../sass/normalize.scss */
+body, p, h1, h2, h3, h4, h5, h6, figure, button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* line 47, ../sass/normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 51, ../sass/normalize.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 4, ../sass/buttons.scss */
+.button {
+  display: inline-block;
+  padding: 0.5625em 1.375em;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #000000;
+  transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}
+
+/* line 20, ../sass/buttons.scss */
+.button:hover {
+  cursor: pointer;
+  background-color: #C29974;
+  transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}
+
+/* line 28, ../sass/buttons.scss */
+.button:active {
+  opacity: 0.5;
+  transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}

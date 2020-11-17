@@ -1,0 +1,230 @@
+// Contacts
+@import "header.scss";
+@import "footer.scss";
+@import "buttons.scss";
+@import "social.scss";
+@import "normalize.scss";
+@import "navigation.scss";
+
+.main {
+
+}
+
+.contacts {
+
+}
+
+.contacts__wrap {
+  // Block model
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  // Block model
+  margin: 0 0 0.5rem 0;
+  // Typography
+  font-family: $font-optional-1;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contacts__nav {
+  // Block model
+  margin: 0 0 3.125rem 0;
+}
+
+.contacts__feedback {
+  // Position
+  display: flex;
+  // Block model
+  margin: 0 0 3.75rem 0;
+}
+
+.contacts__feedback-title {
+  // Position
+  display: none;
+}
+
+.contacts__feedback-form {
+  // Position
+  display: flex;
+  flex-flow: column;
+  // Block model
+  width: 42.5rem;
+  padding: 2.5rem;
+  margin: 0 7.5rem 0 0;
+  box-sizing: border-box;
+  // Stylization
+  border: none;
+  background-color: $color_light-blue;
+}
+
+.contacts__feedback-field {
+  // Stylization
+  border: none;
+  padding: 0;
+}
+
+.contacts__feedback-wrapper {
+  // Position
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  // Block model
+  margin: 0 0 1.125rem 0;
+}
+
+.contacts__feedback-wrapper--half {
+  // Position
+  display: flex;
+  flex-flow: row;
+}
+
+.contacts__feedback-wrapper--margined:first-child {
+  // Block model
+  margin: 0 1.125rem 0 0;
+}
+
+.contacts__feedback-label {
+  // Position
+  display: block;
+  // Block model
+  margin: 0 0 0.3rem 0;
+  // Typography
+  color: $color_black;
+  font-size: 0.875rem;
+}
+
+.contacts__feedback-input {
+  // Block model
+  padding: 1rem 0 0.7rem 1.25rem;
+  box-sizing: border-box;
+  // Typography
+  font-size: 1.125rem;
+  // Stylization
+  box-shadow: none;
+  border: solid 1px rgba(0,0,0,0.2);
+}
+
+.contacts__feedback-input--hidden {
+  // Position
+  position: absolute;
+  left: 0;
+  // Block model
+  width: 1.18rem;
+  height: 1.18rem;
+  // Stylization
+  opacity: 0;
+  z-index: 1;
+}
+
+.contacts__feedback-input:focus {
+  // Stylization
+  border: solid 1px rgba(0,0,0,0.3);
+  outline: 0;
+}
+
+.contacts__feedback-textarea {
+  // Block model
+  width: 100%;
+  padding: 0.875rem 0 0 1.125rem;
+  margin: 0 0 1.125rem 0;
+  box-sizing: border-box;
+  // Typography
+  font-family: $font-primary;
+  font-size: 1.125rem;
+  // Stylization
+  box-shadow: none;
+  border: solid 1px rgba(0,0,0,0.2);
+}
+
+.contacts__feedback-textarea:focus   {
+  // Stylization
+  outline: 0;
+  border: solid 1px rgba(0,0,0,0.3);
+}
+
+.contacts__feedback-information {
+  // Position
+  display: inline-block;
+  position: relative;
+  // Block model
+  padding: 0 0 0 2rem;
+  margin: 0 0 1.125rem 0;
+  // Typography
+  font-size: 0.875rem;
+}
+
+.contacts__feedback-agreement::before {
+  // Position
+  content: '';
+  position: absolute;
+  left: 0;
+  // Block model
+  width: 1.4rem;
+  height: 1.4rem;
+  // Stylization
+  border-radius: 0.2rem;
+  z-index: 1;
+  // Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.contacts__feedback-agreement::after {
+  // Position
+  content: '';
+  position: absolute;
+  left: 0;
+  // Block model
+  width: 1.18rem;
+  height: 1.18rem;
+  // Stylization
+  opacity: 1;
+  border: solid 2px $color_2;
+  border-radius: 0.2rem;
+  z-index: 1;
+}
+
+.contacts__feedback-agreement:hover::after {
+  // Stylization
+  cursor: pointer;
+  opacity: 0.5;
+  // Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.contacts__feedback-input:checked + .contacts__feedback-agreement::before {
+  // Stylization
+  background: url("../../images/img_icon_checked.svg") 0.35rem 0.1rem no-repeat;
+}
+
+.contacts__feedback-input:focus + .contacts__feedback-agreement::after {
+  // Stylization
+  opacity: 0.5;
+  // Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.contacts__information-wrap {
+  // Position
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+}
+
+.contacts__information {
+  // Block model
+  margin: 0 0 1.125rem 0;
+}
+
+.contacts__information--highlighted {
+  // Typography
+  color: $color_2;
+  font-family: $font-optional-1;
+  font-size: 1.625rem;
+  // font-weight: 300;
+  line-height: 2rem;
+  text-transform: uppercase;
+}

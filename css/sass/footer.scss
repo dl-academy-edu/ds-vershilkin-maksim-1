@@ -1,0 +1,164 @@
+// Footer
+@import "normalize.scss";
+
+.footer {
+  // Block model
+  padding: 6.25rem 0;
+  // Stylization
+  color: $color_white;
+  background-color: $color_grey;
+}
+
+.footer__wrap {
+  // Block model
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.footer__sections {
+  // Position
+  display: flex;
+  // Block model
+  margin: 0 0 1.4rem 0;
+}
+
+.footer__section {
+  // Position
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  // Block model
+  margin: 0 1.25rem 0 0;
+  box-sizing: border-box;
+}
+
+.footer__section-title {
+  // Block model
+  margin: 0 0 1.3rem 0;
+  padding: 0 0 1.45rem 0;
+  // Typography
+  color: $color_dark-grey;
+  // Stylization
+  border-bottom: solid 1px $color_white;
+}
+
+.footer__section-form {
+  // Block model
+  margin: 0 0 1em 0;
+}
+
+.footer__section-link {
+  // Typography
+  color: $color_white;
+  line-height: 2.3rem;
+  // Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.footer__section-link:hover {
+  // Stylization
+  opacity: 0.5;
+  // Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.footer__section-link:active {
+  // Stylization
+  opacity: 0.2;
+  // Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.footer__section-form {
+  // Position
+  display: flex;
+  // Block model
+  margin: 0 0 1.5rem 0;
+}
+
+.footer__section-input {
+  // Block model
+  width: 70%;
+  padding: 0.7em 1em;
+  box-sizing: border-box;
+  // Typography
+  color: $color_white;
+  font-size: 1rem;
+  font-family: $font-primary;
+  // Stylization
+  border: solid 1px $color_white;
+  background-color: $color_light-grey;
+}
+
+.footer__section-button {
+  // Block model
+  margin: 0 0 0 -1px;
+  width: 30%;
+  padding: 0.7em 1em;
+  box-sizing: border-box;
+  // Typography
+  color: $color_white;
+  font-size: 1rem;
+  font-family: $font-primary;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  // Stylization
+  border: solid 1px $color_black;
+  background-color: $color_black;
+}
+
+.footer__section-button:hover {
+  // Stylization
+  cursor: pointer;
+}
+
+.footer__information {
+  // Position
+  display: flex;
+  flex-flow: row;
+  // Block model
+  padding: 1.5em 0 0 0;
+  // Stylization
+  border-top: solid 1px $color_white;
+}
+
+.footer__information-item {
+  // Position
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+}
+
+.footer__information-description {
+  // Block model
+  margin: 0 1.5em 0 0;
+}
+
+.footer__information-list {
+  // Position
+  display: flex;
+}
+
+.footer__information-item {
+  // Position
+  margin: 0 0.3em 0 0;
+}
+
+.footer__information-developer {
+  // Typography
+  color: $color_middle-grey;
+  text-transform: capitalize;
+  // Animation
+  transition: color ease-in 0.3s, text-transform ease-in 0.3s;
+}
+
+.footer__information-developer:hover {
+  // Typography
+  color: $color_white;
+  text-decoration: underline;
+  // Stylization
+  cursor: pointer;
+  // Animation
+  transition: color ease-in 0.3s, text-transform ease-in 0.3s;
+}

@@ -1,0 +1,33 @@
+// Buttons styles
+@import "normalize.scss";
+
+.button {
+  // Position
+  display: inline-block;
+  // Block model
+  padding: 0.5625em 1.375em;
+  // Typography
+  color: $color_white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  // Stylization
+  background-color: $color_black;
+  // Animation
+  transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}
+
+.button:hover {
+  // Stylization
+  cursor: pointer;
+  background-color: $color_brown;
+  // Animation
+  transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}
+
+.button:active {
+  // Stylization
+  opacity: 0.5;
+  // Animation
+  transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/stylesheets/category.css">
     <title>Main page</title>
   </head>
 
@@ -48,7 +49,7 @@
          <button class="header__searching">
            <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon" width="17" height="16">
          </button>
-         <a class="header__button button" href="/contacts.html">Contact us</a>
+         <a class="header__link" href="/contacts.html">Contact us</a>
 
        </div>
 
@@ -63,8 +64,8 @@
 
            <h1 class="category__title">Toy for kids</h1>
 
-           <!-- Section navigation -->
-           <nav class="catalog__nav section-navigation">
+           <!-- Sections nav -->
+           <nav class="category__nav section-navigation">
 
              <a class="section-navigation__link" href="/">Home</a>
              <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon" width="8" height="12">
@@ -74,11 +75,17 @@
 
            </nav>
 
-           <!-- Filter -->
-           <form class="category__form" action="index.html" method="post">
+         </div>
+
+        <div class="category__wrap--wide">
+
+          <div class="category__wrap">
+
+            <!-- Filter -->
+            <form class="category__form" action="index.html" method="post">
 
                <!-- Cost -->
-               <fieldset class="category__form-field">
+               <fieldset class="category__form-field category__form-field--first">
 
                  <legend class="category__form-legend">Cost</legend>
 
@@ -89,30 +96,30 @@
                </fieldset>
 
                <!-- Color -->
-               <fieldset class="category__form-field">
+               <fieldset class="category__form-field category__form-field--second">
 
                  <legend class="category__form-legend">Color</legend>
 
                  <ul class="category__form-color">
 
                    <li class="category__form-color-item">
-                     <input class="category__form-input" id="color_1" type="checkbox" name="color" value="black" checked>
-                     <label for="color_1">Black</label>
+                     <input class="category__form-input category__form-input--color category__form-input--hidden" id="color_1" type="checkbox" name="color" value="black" checked>
+                     <label class="category__form-label category__form-label--color" for="color_1">Black</label>
+                   </li>
+
+                   <li class="category__form-color-item ">
+                     <input class="category__form-input category__form-input--color category__form-input--hidden" id="color_2" type="checkbox" name="color" value="blue">
+                     <label class="category__form-label category__form-label--color" for="color_2">Blue</label>
                    </li>
 
                    <li class="category__form-color-item">
-                     <input class="category__form-input" id="color_2" type="checkbox" name="color" value="blue">
-                     <label for="color_2">Blue</label>
+                     <input class="category__form-input category__form-input--color category__form-input--hidden" id="color_3" type="checkbox" name="color" value="green">
+                     <label class="category__form-label category__form-label--color" for="color_3">Green</label>
                    </li>
 
                    <li class="category__form-color-item">
-                     <input class="category__form-input" id="color_3" type="checkbox" name="color" value="green">
-                     <label for="color_3">Green</label>
-                   </li>
-
-                   <li class="category__form-color-item">
-                     <input class="category__form-input" id="color_4" type="checkbox" name="color" value="white">
-                     <label for="color_4">White</label>
+                     <input class="category__form-input category__form-input--color category__form-input--hidden" id="color_4" type="checkbox" name="color" value="white">
+                     <label class="category__form-label category__form-label--color" for="color_4">White</label>
                    </li>
 
                  </ul>
@@ -120,20 +127,20 @@
                </fieldset>
 
                <!-- Delivery -->
-               <fieldset class="category__form-field">
+               <fieldset class="category__form-field category__form-field--third">
 
                  <legend class="category__form-legend">Delivery</legend>
 
                  <ul class="category__form-delivery">
 
                    <li class="category__form-delivery-item">
-                     <input class="category__form-input" id="free" type="radio" name="delivery" value="free" checked>
-                     <label for="free">Free shipping</label>
+                     <input class="category__form-input category__form-input--delivery category__form-input--hidden" id="free" type="radio" name="delivery" value="free">
+                     <label class="category__form-label category__form-label--delivery" for="free">Free shipping</label>
                    </li>
 
                    <li class="category__form-delivery-item">
-                     <input class="category__form-input" id="fast" type="radio" name="delivery" value="fast">
-                     <label for="fast">Fast shipping</label>
+                     <input class="category__form-input category__form-input--delivery category__form-input--hidden" id="fast" type="radio" name="delivery" value="fast" checked>
+                     <label class="category__form-label category__form-label--delivery" for="fast">Fast shipping</label>
                    </li>
 
                  </ul>
@@ -141,137 +148,160 @@
                </fieldset>
 
                <!-- Amount -->
-               <fieldset class="category__form-field">
+               <fieldset class="category__form-field category__form-field--fourth">
 
                  <legend class="category__form-legend">Amount</legend>
 
                  <ul class="category__form-amount">
 
                    <li class="category__form-amount-item">
-                     <input class="category__form-amount-item category__form-amount-item--active" type="text" name="amount" value="0-5" checked>
+                     <input class="category__form-input category__form-input--amount category__form-input--hidden" id="amount_1" type="radio" name="amount" value="0-5" checked>
+                     <label class="category__form-label category__form-label--amount" for="amount_1">0-5</label>
                    </li>
 
                    <li class="category__form-amount-item">
-                     <input class="category__form-amount-item" type="text" name="amount" value="10-20">
+                     <input class="category__form-input category__form-input--amount category__form-input--hidden" type="radio" name="amount" value="10-20">
+                     <label class="category__form-label category__form-label--amount" for="amount_1">10-20</label>
                    </li>
 
                    <li class="category__form-amount-item">
-                     <input class="category__form-amount-item" type="text" name="amount" value="20-50">
+                     <input class="category__form-input category__form-input--amount category__form-input--hidden" type="radio" name="amount" value="20-50">
+                     <label class="category__form-label category__form-label--amount" for="amount_1">20-50</label>
                    </li>
 
                  </ul>
 
                </fieldset>
 
-               <button class="category__form-submit" type="submit" name="submit">Apply</button>
+               <button class="category__form-submit button" type="submit" name="submit">Apply</button>
 
            </form>
 
+         </div>
+
+        </div>
+
+        <div class="category__wrap">
            <!-- List -->
-           <ul class="catalog__list">
+           <ul class="category__list">
 
              <li class="catalog__item">
 
-               <a class="catalog__more" href="#">
-                 <div class="catalog__more-text">Learn more</div>
+               <a class="catalog__link" href="#">
+
+                 <div class="catalog__more">Learn more</div>
+
+                 <figure class="catalog__figure">
+                   <img class="catalog__image" src="/images/img_item_1.png" alt="Sharky head image" width="380" height="385">
+                 </figure>
+
+                 <span class="catalog__name">Sharky bean bag chair cover</span>
+                 <span class="catalog__price">&#36;60.00 usd</span>
+
                </a>
-
-               <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_1.png" alt="Sharky head image" width="380" height="385">
-               </figure>
-
-               <span class="catalog__name">Sharky bean bag chair cover</span>
-               <span class="catalog__price">&#36;60.00 usd</span>
 
              </li>
 
              <li class="catalog__item">
 
-               <a class="catalog__more" href="#">
-                 <div class="catalog__more-text">Learn more</div>
+               <a class="catalog__link" href="#">
+
+                 <figure class="catalog__figure">
+                   <div class="catalog__more">Learn more</div>
+                   <img class="catalog__image" src="/images/img_item_2.png" alt="Brass deco image" width="380" height="385">
+                 </figure>
+
+                 <span class="catalog__name">Brass deco frames</span>
+                 <span class="catalog__price">&#36;66.00 usd</span>
+
                </a>
-
-               <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_2.png" alt="Brass deco image" width="380" height="385">
-               </figure>
-
-               <span class="catalog__name">Brass deco frames</span>
-               <span class="catalog__price">&#36;66.00 usd</span>
 
              </li>
 
              <li class="catalog__item">
 
-               <a class="catalog__more" href="#">
-                 <div class="catalog__more-text">Learn more</div>
-               </a>
+               <a class="catalog__link" href="#">
 
                <figure class="catalog__figure">
+                 <div class="catalog__more">Learn more</div>
                  <img class="catalog__image" src="/images/img_item_3.png" alt="Cibo full arpon image" width="380" height="385">
                </figure>
 
                <span class="catalog__name">Cibo full arpon</span>
                <span class="catalog__price">&#36;60.00 usd</span>
 
-             </li>
-
-             <li class="catalog__item">
-
-               <a class="catalog__more" href="#">
-                 <div class="catalog__more-text">Learn more</div>
                </a>
-
-               <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_4.png" alt="Gatch gatcha gumball machine image" width="380" height="385">
-               </figure>
-
-               <span class="catalog__name">Gatch gatcha gumball machine</span>
-               <span class="catalog__price">&#36;56.00 usd</span>
 
              </li>
 
              <li class="catalog__item">
 
-               <a class="catalog__more" href="#">
-                 <div class="catalog__more-text">Learn more</div>
+               <a class="catalog__link" href="#">
+
+                 <figure class="catalog__figure">
+                   <div class="catalog__more">Learn more</div>
+                   <img class="catalog__image" src="/images/img_item_4.png" alt="Gatch gatcha gumball machine image" width="380" height="385">
+                 </figure>
+
+                 <span class="catalog__name">Gatch gatcha gumball machine</span>
+                 <span class="catalog__price">&#36;56.00 usd</span>
+
                </a>
-
-               <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_5.png" alt="Christmas advent scented candle image" width="380" height="385">
-               </figure>
-
-               <span class="catalog__name">Christmas advent scented candle</span>
-               <span class="catalog__price">&#36;29.00 usd</span>
 
              </li>
 
              <li class="catalog__item">
 
-               <a class="catalog__more" href="#">
-                 <div class="catalog__more-text">Learn more</div>
+               <a class="catalog__link" href="#">
+
+                 <figure class="catalog__figure">
+                   <div class="catalog__more">Learn more</div>
+                   <img class="catalog__image" src="/images/img_item_5.png" alt="Christmas advent scented candle image" width="380" height="385">
+                 </figure>
+
+                 <span class="catalog__name">Christmas advent scented candle</span>
+                 <span class="catalog__price">&#36;29.00 usd</span>
+
                </a>
 
-               <figure class="catalog__figure">
-                 <img class="catalog__image" src="/images/img_item_6.png" alt="Tangle spinning tea light image" width="380" height="385">
-               </figure>
+             </li>
 
-               <span class="catalog__name">Tangle spinning tea light</span>
-               <span class="catalog__price">&#36;56.00 usd</span>
+             <li class="catalog__item">
+
+               <a class="catalog__link" href="#">
+
+                 <figure class="catalog__figure">
+                   <div class="catalog__more">Learn more</div>
+                   <img class="catalog__image" src="/images/img_item_6.png" alt="Tangle spinning tea light image" width="380" height="385">
+                 </figure>
+
+                 <span class="catalog__name">Tangle spinning tea light</span>
+                 <span class="catalog__price">&#36;56.00 usd</span>
+
+               </a>
 
              </li>
 
            </ul>
 
            <!-- Pagination -->
-           <div class="catalog__pagination pagination">
+           <div class="category__pagination pagination">
 
              <button class="pagination__button pagination__button--previous" type="button" name="previous"></button>
 
              <ul class="pagination__list">
-               <li class="pagination__item pagination__item--active">1</li>
-               <li class="pagination__item">2</li>
-               <li class="pagination__item">3</li>
-               <li class="pagination__item">4</li>
+               <li class="pagination__item pagination__item--active">
+                 <a class="pagination__item-page pagination__item-page--active" href="#">1</a>
+               </li>
+               <li class="pagination__item">
+                 <a class="pagination__item-page" href="#">2</a>
+               </li>
+               <li class="pagination__item">
+                 <a class="pagination__item-page" href="#">3</a>
+               </li>
+               <li class="pagination__item">
+                 <a class="pagination__item-page" href="#">4</a>
+               </li>
              </ul>
 
              <button class="pagination__button pagination__button--next" type="button" name="next"></button>

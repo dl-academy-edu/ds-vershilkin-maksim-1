@@ -1,0 +1,824 @@
+/* line 28, ../sass/normalize.scss */
+:root {
+  font-size: 1em;
+}
+
+/* line 33, ../sass/normalize.scss */
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+/* line 38, ../sass/normalize.scss */
+body, p, h1, h2, h3, h4, h5, h6, figure, button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* line 47, ../sass/normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 51, ../sass/normalize.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 4, ../sass/header.scss */
+.header {
+  margin: 0 0 2.5rem 0;
+  padding: 2.3rem 0 0 0;
+}
+
+/* line 10, ../sass/header.scss */
+.header__wrap {
+  display: flex;
+  flex-flow: row;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+/* line 19, ../sass/header.scss */
+.header__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  margin: 0 3.75em 0 0;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 31, ../sass/header.scss */
+.header__logo:hover {
+  opacity: 0.5;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 38, ../sass/header.scss */
+.header__logo:active {
+  opacity: 0.2;
+}
+
+/* line 43, ../sass/header.scss */
+.header__nav {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+/* line 50, ../sass/header.scss */
+.header__nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 60, ../sass/header.scss */
+.header__nav-item {
+  margin: 0 1.25em 0 0;
+}
+
+/* line 65, ../sass/header.scss */
+.header__nav-link {
+  color: #000000;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 74, ../sass/header.scss */
+.header__nav-link:hover {
+  opacity: 0.5;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 81, ../sass/header.scss */
+.header__nav-link:active {
+  opacity: 0.2;
+}
+
+/* line 86, ../sass/header.scss */
+.header__searching {
+  display: flex;
+  align-self: center;
+  margin: 0 2em 0 0;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 96, ../sass/header.scss */
+.header__searching:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 104, ../sass/header.scss */
+.header__searching:active {
+  opacity: 0.2;
+}
+
+/* line 109, ../sass/header.scss */
+.header__link {
+  display: flex;
+  align-self: center;
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 122, ../sass/header.scss */
+.header__link:hover {
+  opacity: 0.5;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 129, ../sass/header.scss */
+.header__link:active {
+  opacity: 0.2;
+}
+
+/* line 4, ../sass/footer.scss */
+.footer {
+  padding: 6.25rem 0;
+  color: #ffffff;
+  background-color: #434343;
+}
+
+/* line 12, ../sass/footer.scss */
+.footer__wrap {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+/* line 18, ../sass/footer.scss */
+.footer__sections {
+  display: flex;
+  margin: 0 0 1.4rem 0;
+}
+
+/* line 25, ../sass/footer.scss */
+.footer__section {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  margin: 0 1.25rem 0 0;
+  box-sizing: border-box;
+}
+
+/* line 35, ../sass/footer.scss */
+.footer__section-title {
+  margin: 0 0 1.3rem 0;
+  padding: 0 0 1.45rem 0;
+  color: #AAAAAA;
+  border-bottom: solid 1px #ffffff;
+}
+
+/* line 45, ../sass/footer.scss */
+.footer__section-form {
+  margin: 0 0 1em 0;
+}
+
+/* line 50, ../sass/footer.scss */
+.footer__section-link {
+  color: #ffffff;
+  line-height: 2.3rem;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 58, ../sass/footer.scss */
+.footer__section-link:hover {
+  opacity: 0.5;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 65, ../sass/footer.scss */
+.footer__section-link:active {
+  opacity: 0.2;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 72, ../sass/footer.scss */
+.footer__section-form {
+  display: flex;
+  margin: 0 0 1.5rem 0;
+}
+
+/* line 79, ../sass/footer.scss */
+.footer__section-input {
+  width: 70%;
+  padding: 0.7em 1em;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Open Sans", "Arial", sans-serif;
+  border: solid 1px #ffffff;
+  background-color: #666666;
+}
+
+/* line 93, ../sass/footer.scss */
+.footer__section-button {
+  margin: 0 0 0 -1px;
+  width: 30%;
+  padding: 0.7em 1em;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border: solid 1px #000000;
+  background-color: #000000;
+}
+
+/* line 111, ../sass/footer.scss */
+.footer__section-button:hover {
+  cursor: pointer;
+}
+
+/* line 116, ../sass/footer.scss */
+.footer__information {
+  display: flex;
+  flex-flow: row;
+  padding: 1.5em 0 0 0;
+  border-top: solid 1px #ffffff;
+}
+
+/* line 126, ../sass/footer.scss */
+.footer__information-item {
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+}
+
+/* line 133, ../sass/footer.scss */
+.footer__information-description {
+  margin: 0 1.5em 0 0;
+}
+
+/* line 138, ../sass/footer.scss */
+.footer__information-list {
+  display: flex;
+}
+
+/* line 143, ../sass/footer.scss */
+.footer__information-item {
+  margin: 0 0.3em 0 0;
+}
+
+/* line 148, ../sass/footer.scss */
+.footer__information-developer {
+  color: #A2A2A2;
+  text-transform: capitalize;
+  transition: color ease-in 0.3s, text-transform ease-in 0.3s;
+}
+
+/* line 156, ../sass/footer.scss */
+.footer__information-developer:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color ease-in 0.3s, text-transform ease-in 0.3s;
+}
+
+/* line 4, ../sass/buttons.scss */
+.button {
+  display: inline-block;
+  padding: 0.5625em 1.375em;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #000000;
+  transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}
+
+/* line 20, ../sass/buttons.scss */
+.button:hover {
+  cursor: pointer;
+  background-color: #C29974;
+  transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}
+
+/* line 28, ../sass/buttons.scss */
+.button:active {
+  opacity: 0.5;
+  transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}
+
+/* line 4, ../sass/social.scss */
+.social {
+  display: flex;
+  flex-flow: row;
+}
+
+/* line 10, ../sass/social.scss */
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  margin: 0 0.6em 0 0;
+}
+
+/* line 21, ../sass/social.scss */
+.social__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #666666;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 32, ../sass/social.scss */
+.social__link:hover {
+  opacity: 0.3;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 40, ../sass/social.scss */
+.social__link:active {
+  opacity: 0.7;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 47, ../sass/social.scss */
+.social__link--facebook {
+  background: #666666 url("../../images/img_icon_facebook.svg") center no-repeat;
+}
+
+/* line 52, ../sass/social.scss */
+.social__link--twitter {
+  background: #666666 url("../../images/img_icon_twitter.svg") center no-repeat;
+}
+
+/* line 57, ../sass/social.scss */
+.social__link--pinterest {
+  background: #666666 url("../../images/img_icon_pinterest.svg") center no-repeat;
+}
+
+/* line 62, ../sass/social.scss */
+.social__link--instagram {
+  background: #666666 url("../../images/img_icon_instagram.svg") center no-repeat;
+}
+
+/* line 8, ../sass/navigation.scss */
+.section-navigation__link {
+  margin: 0 1.25rem 0 0;
+  color: #000000;
+  font-size: 1.25rem;
+  font-family: "Crimson Text", "Arial", sans-serif;
+}
+
+/* line 17, ../sass/navigation.scss */
+.section-navigation__link--active {
+  opacity: 0.5;
+}
+
+/* line 22, ../sass/navigation.scss */
+.section-navigation__icon {
+  margin: 0 1.25rem 0 0;
+}
+
+/* line 8, ../sass/pagination.scss */
+.pagination__button {
+  width: 0.9rem;
+  height: 1.625rem;
+  opacity: 0.3;
+  transition: opacity ease-in .3s;
+}
+
+/* line 18, ../sass/pagination.scss */
+.pagination__button--previous {
+  background: url("../../images/img_icon_pagination_arrow_left.svg") center no-repeat;
+  background-size: 0.9rem;
+}
+
+/* line 24, ../sass/pagination.scss */
+.pagination__button--next {
+  background: url("../../images/img_icon_pagination_arrow_right.svg") center no-repeat;
+  background-size: 0.9rem;
+}
+
+/* line 29, ../sass/pagination.scss */
+.pagination__button:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity ease-in .3s;
+}
+
+/* line 37, ../sass/pagination.scss */
+.pagination__button:active {
+  opacity: 0.5;
+}
+
+/* line 42, ../sass/pagination.scss */
+.pagination__list {
+  display: flex;
+}
+
+/* line 47, ../sass/pagination.scss */
+.pagination__item {
+  margin: 0 2rem;
+}
+
+/* line 52, ../sass/pagination.scss */
+.pagination__item-page {
+  color: #000000;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 60, ../sass/pagination.scss */
+.pagination__item-page:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 68, ../sass/pagination.scss */
+.pagination__item-page--active {
+  color: #C29974;
+}
+
+/* line 13, ../sass/category.scss */
+.category__wrap {
+  margin: 0 auto;
+  width: 1180px;
+  box-sizing: border-box;
+}
+
+/* line 20, ../sass/category.scss */
+.category__title {
+  margin: 0 0 0.5rem 0;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 30, ../sass/category.scss */
+.category__nav {
+  margin: 0 0 3.125rem 0;
+}
+
+/* line 35, ../sass/category.scss */
+.category__wrap--wide {
+  margin: 0 0 3.75rem 0;
+  padding: 2.625rem 0;
+  background-color: #E5EAF8;
+}
+
+/* line 43, ../sass/category.scss */
+.category__form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+/* line 50, ../sass/category.scss */
+.category__form-field {
+  padding: 0;
+  border: none;
+}
+
+/* line 58, ../sass/category.scss */
+.category__form-field--first {
+  margin: 0 5.875rem 0 0;
+}
+
+/* line 63, ../sass/category.scss */
+.category__form-cost {
+  width: 100%;
+  margin: 0 0 0.375rem 0;
+}
+
+/* line 69, ../sass/category.scss */
+.category__form-min {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* line 77, ../sass/category.scss */
+.category__form-max {
+  display: inline-block;
+  text-align: right;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+/* line 87, ../sass/category.scss */
+.category__form-field--second {
+  margin: 0 7.75rem 0 0;
+}
+
+/* line 92, ../sass/category.scss */
+.category__form-legend {
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+}
+
+/* line 100, ../sass/category.scss */
+.category__form-input--hidden {
+  position: absolute;
+  z-index: 999;
+}
+
+/* line 108, ../sass/category.scss */
+.category__form-input--color {
+  top: 0.1rem;
+  width: 1rem;
+  height: 1rem;
+  opacity: 0;
+  border: none;
+}
+
+/* line 118, ../sass/category.scss */
+.category__form-input--color:hover {
+  cursor: pointer;
+}
+
+/* line 123, ../sass/category.scss */
+.category__form-color-item {
+  position: relative;
+  margin: 0 0 1rem 0;
+}
+
+/* line 130, ../sass/category.scss */
+.category__form-label--color {
+  position: relative;
+  padding: 0 0 0 1.9rem;
+}
+
+/* line 137, ../sass/category.scss */
+.category__form-label--color::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  z-index: 1;
+  outline: 0;
+}
+
+/* line 151, ../sass/category.scss */
+.category__form-label--color::before {
+  cursor: pointer;
+}
+
+/* line 156, ../sass/category.scss */
+.category__form-label--color::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: solid 2px #C29974;
+  border-radius: 0.2rem;
+}
+
+/* line 171, ../sass/category.scss */
+.category__form-input--color:checked + .category__form-label--color::before {
+  background: url("../../images/img_icon_checked.svg") 0.35rem 0.15rem no-repeat;
+}
+
+/* line 176, ../sass/category.scss */
+.category__form-input--color:focus + .category__form-label--color::after {
+  opacity: 0.5;
+}
+
+/* line 182, ../sass/category.scss */
+.category__form-field--third {
+  margin: 0 4.375rem 0 0;
+}
+
+/* line 187, ../sass/category.scss */
+.category__form-delivery-item {
+  position: relative;
+  margin: 0 0 1rem 0;
+}
+
+/* line 194, ../sass/category.scss */
+.category__form-input--delivery {
+  position: absolute;
+  top: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+/* line 207, ../sass/category.scss */
+.category__form-input--delivery:hover {
+  cursor: pointer;
+}
+
+/* line 212, ../sass/category.scss */
+.category__form-label--delivery {
+  position: relative;
+  padding: 0 0 0 1.9rem;
+}
+
+/* line 219, ../sass/category.scss */
+.category__form-label--delivery::before {
+  content: '';
+  position: absolute;
+  top: 0.33rem;
+  left: 0.35rem;
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+/* line 234, ../sass/category.scss */
+.category__form-label--delivery::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1.15rem;
+  height: 1.15rem;
+  border: solid 2px #C29974;
+  border-radius: 50%;
+}
+
+/* line 249, ../sass/category.scss */
+.category__form-input--delivery:checked + .category__form-label--delivery::before {
+  background-color: #C29974;
+}
+
+/* line 254, ../sass/category.scss */
+.category__form-input--delivery:focus + .category__form-label--delivery::after {
+  opacity: 0.5;
+}
+
+/* line 260, ../sass/category.scss */
+.category__form-field--fourth {
+  margin: 0 4.375rem 0 0;
+}
+
+/* line 265, ../sass/category.scss */
+.category__form-amount {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* line 271, ../sass/category.scss */
+.category__form-amount-item {
+  position: relative;
+  width: 5rem;
+}
+
+/* line 278, ../sass/category.scss */
+.category__form-input--amount {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
+  opacity: 0;
+  border: none;
+}
+
+/* line 292, ../sass/category.scss */
+.category__form-input--amount:checked + .category__form-label--amount {
+  background-color: #F3D0DB;
+  transition: opacity ease-in .3s;
+}
+
+/* line 299, ../sass/category.scss */
+.category__form-input--amount:focus + .category__form-label--amount {
+  opacity: 0.5;
+  transition: opacity ease-in .3s;
+}
+
+/* line 306, ../sass/category.scss */
+.category__form-input--amount:hover {
+  cursor: pointer;
+  transition: opacity ease-in .3s;
+}
+
+/* line 313, ../sass/category.scss */
+.category__form-label--amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.75rem;
+  background-color: #ffffff;
+  transition: opacity ease-in .3s;
+}
+
+/* line 326, ../sass/category.scss */
+.category__form-input--amount:hover + .category__form-label--amount {
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: #F3D0DB;
+  transition: opacity ease-in .3s;
+}
+
+/* line 335, ../sass/category.scss */
+.category__form-submit {
+  margin: 2.4rem 0 0 0;
+}
+
+/* line 340, ../sass/category.scss */
+.category__list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* line 346, ../sass/category.scss */
+.catalog__item {
+  position: relative;
+  width: 30%;
+  margin: 0 1.25rem 1.25rem 0;
+  border-box: box-sizing;
+}
+
+/* line 355, ../sass/category.scss */
+.catalog__item:nth-child(3) {
+  margin: 0 0 1.25rem 0;
+}
+
+/* line 360, ../sass/category.scss */
+.catalog__link {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  color: #000000;
+}
+
+/* line 370, ../sass/category.scss */
+.catalog__more {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5.625rem;
+  left: 25%;
+  right: 25%;
+  width: 12.95rem;
+  padding: 5rem 0;
+  color: #000000;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 2.5rem rgba(147, 3, 3, 0.25);
+  opacity: 0;
+  background: rgba(229, 234, 248, 0.9);
+  transition: opacity ease-in .3s;
+}
+
+/* line 397, ../sass/category.scss */
+.catalog__more:hover {
+  opacity: 1;
+  transition: opacity ease-in .3s;
+}
+
+/* line 404, ../sass/category.scss */
+.catalog__more:active {
+  opacity: 1;
+  background: rgba(229, 234, 248, 0.67);
+}
+
+/* line 410, ../sass/category.scss */
+.catalog__name {
+  margin: 0 0 1rem 0;
+  font-size: 0.875;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 419, ../sass/category.scss */
+.catalog__price {
+  margin: 0 0 1.6rem 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* line 427, ../sass/category.scss */
+.category__pagination {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0 0 3.125rem 0;
+}

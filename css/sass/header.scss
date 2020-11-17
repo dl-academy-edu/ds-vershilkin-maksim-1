@@ -1,0 +1,132 @@
+@import "normalize.scss";
+
+// Header block
+.header {
+  // Block model
+  margin: 0 0 2.5rem 0;
+  padding: 2.3rem 0 0 0;
+}
+
+.header__wrap {
+  // Position
+  display: flex;
+  flex-flow: row;
+  // Block model
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  // Position
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  // Block model
+  margin: 0 3.75em 0 0;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+
+.header__logo:hover {
+  // Stylization
+  opacity: 0.5;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__logo:active {
+  // Stylization
+  opacity: 0.2;
+}
+
+.header__nav {
+  // Position
+  display:flex;
+  flex: 1;
+  align-items: center;
+}
+
+.header__nav-list {
+  // Position
+  display: flex;
+  // Block model
+  margin:0;
+  padding:0;
+  // Stylization
+  list-style-type: none;
+}
+
+.header__nav-item {
+  // Block model
+  margin: 0 1.25em 0 0;
+}
+
+.header__nav-link {
+  // Typography
+  color: $color_black;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__nav-link:hover {
+  // Stylization
+  opacity: 0.5;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__nav-link:active {
+  // Stylization
+  opacity: 0.2;
+}
+
+.header__searching {
+  // Position
+  display: flex;
+  align-self: center;
+  // Block model
+  margin: 0 2em 0 0;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__searching:hover {
+  // Stylization
+  cursor: pointer;
+  opacity: 0.5;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__searching:active {
+  // Stylization
+  opacity: 0.2;
+}
+
+.header__link {
+  // Position
+  display: flex;
+  align-self: center;
+  //Typography
+  color: $color_black;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__link:hover {
+  // Stylization
+  opacity: 0.5;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__link:active {
+  // Stylization
+  opacity: 0.2;
+}

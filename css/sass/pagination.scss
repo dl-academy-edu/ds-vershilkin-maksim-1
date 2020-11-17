@@ -1,0 +1,71 @@
+// Items nagivation
+@import "normalize.scss";
+
+.pagination {
+
+}
+
+.pagination__button {
+  // Block model
+  width: 0.9rem;
+  height: 1.625rem;
+  // Stylization
+  opacity: 0.3;
+  // Animation
+  transition: opacity ease-in .3s;
+}
+
+.pagination__button--previous {
+  // Stylization
+  background: url("../../images/img_icon_pagination_arrow_left.svg") center no-repeat;
+  background-size: 0.9rem;
+}
+
+.pagination__button--next {
+  background: url("../../images/img_icon_pagination_arrow_right.svg") center no-repeat;
+  background-size: 0.9rem;
+}
+
+.pagination__button:hover {
+  // Stylization
+  cursor: pointer;
+  opacity: 1;
+  // Animation
+  transition: opacity ease-in .3s;
+}
+
+.pagination__button:active {
+  // Stylization
+  opacity: 0.5;
+}
+
+.pagination__list {
+  // Position
+  display: flex;
+}
+
+.pagination__item {
+  // Block model
+  margin: 0 2rem;
+}
+
+.pagination__item-page {
+  // Typography
+  color: $color_black;
+  font-family: $font-optional-1;
+  // Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.pagination__item-page:hover {
+  // Stylization
+  cursor: pointer;
+  opacity: 0.5;
+  // Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.pagination__item-page--active {
+  // Typography
+  color: $color_brown;
+}

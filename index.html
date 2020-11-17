@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@300;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/stylesheets/main.css">
     <title>Main page</title>
   </head>
 
@@ -46,9 +48,9 @@
 
          <!-- Searching and contacts -->
          <button class="header__searching">
-           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon" width="17" height="16">
+           <img class="header__searching-icon" src="images/img_icon_magnifier.svg" alt="Search icon" width="18" height="18">
          </button>
-         <a class="header__button button" href="/contacts.html">Contact us</a>
+         <a class="header__link" href="/contacts.html">Contact us</a>
 
        </div>
 
@@ -62,33 +64,46 @@
 
          <div class="slider__wrap">
 
-           <span class="slider__number">01</span>
 
-           <ul class="slider__nav">
+           <div class="slider__elements">
 
-             <li class="slider__nav-item">
-               <button class="slider__nav-button slider__nav-button--active" type="button" name="button" value="1"></button>
-             </li>
+             <span class="slider__number">01</span>
 
-             <li class="slider__nav-item">
-               <button class="slider__nav-button" type="button" name="button" value="2"></button>
-             </li>
+             <div class="slider__content">
 
-             <li class="slider__nav-item">
-               <button class="slider__nav-button" type="button" name="button" value="3"></button>
-             </li>
+               <ul class="slider__nav">
 
-             <li class="slider__nav-item">
-               <button class="slider__nav-button" type="button" name="button" value="4"></button>
-             </li>
+                 <li class="slider__nav-item">
+                   <button class="slider__nav-button slider__nav-button--active" type="button" name="button" value="1"></button>
+                 </li>
 
-           </ul>
+                 <li class="slider__nav-item">
+                   <button class="slider__nav-button" type="button" name="button" value="2"></button>
+                 </li>
 
-           <h1 class="slider__title">The ooh noo<br>collection</h1>
+                 <li class="slider__nav-item">
+                   <button class="slider__nav-button" type="button" name="button" value="3"></button>
+                 </li>
 
-           <p class="slider__description">Designed in Slovenia</p>
+                 <li class="slider__nav-item">
+                   <button class="slider__nav-button" type="button" name="button" value="4"></button>
+                 </li>
 
-           <a class="slider__button button" href="#">Explore now</a>
+               </ul>
+
+               <div class="slider__collection">
+
+                 <h1 class="slider__title">The ooh noo collection</h1>
+
+                 <p class="slider__description">Designed in Slovenia</p>
+
+                 <a class="slider__button button" href="#">Explore now</a>
+
+               </div>
+
+             </div>
+
+           </div>
 
            <figure class="slider__stuff-wrap">
              <img class="slider__stuff-image" src="images/img_slide_1.png" alt="Toy image" width="636" height="461">
@@ -112,11 +127,11 @@
            <ul class="categories__list">
 
              <li class="categories__list-item categories__list-item--first">
-               <a class="categories__list-link" href="#">Apparel kids</a>
+               <a class="categories__list-link" href="#">Apparel<br>kids</a>
              </li>
 
              <li class="categories__list-item categories__list-item--second">
-               <a class="categories__list-link" href="#">Holiday shop</a>
+               <a class="categories__list-link" href="#">Holiday<br>shop</a>
              </li>
 
              <li class="categories__list-item categories__list-item--third">
@@ -156,9 +171,15 @@
 
              <ul class="benefits__list">
 
-               <li class="benefits__item benefits__item--active">Delivery</li>
-               <li class="benefits__item">Guarantee</li>
-               <li class="benefits__item">Credit</li>
+               <li class="benefits__item">
+                 <button class="benefits__button benefits__button--active" type="button" name="button">Delivery</button>
+               </li>
+               <li class="benefits__item">
+                 <button class="benefits__button" type="button" name="button">Guarantee</button>
+                 </li>
+               <li class="benefits__item">
+                 <button class="benefits__button" type="button" name="button">Credit</button>
+                 </li>
 
              </ul>
 
@@ -378,7 +399,7 @@
            <li class="footer__information-item">
 
              <span class="footer__information-copyright">
-               Copyright &#169; Dlk <span class="footer__information-dot">&#183;</span> Design life kids
+               Copyright &#169; 2018 Dlk <span class="footer__information-dot">&#183;</span> Design life kids
              </span>
 
            </li>
@@ -386,7 +407,7 @@
            <li class="footer__information-item">
 
              <span class="footer__information-owner">
-               Wed design - <a class="footer__information-developer" href="https://directlinedev.com/">Direct line development</a>
+               <a class="footer__information-developer" href="https://directlinedev.com/">Wed design - Direct line development</a>
              </span>
 
            </li>
@@ -398,42 +419,68 @@
      </footer>
 
      <!-- Popup feedback form -->
-     <section class="feedback">
+     <section class="popup-feedback feedback feedback--hidden">
 
-       <h2 class="feedback__title">Feedback form</h2>
+       <div class="feedback__wrap">
 
-       <!-- Form -->
-       <form class="feedback__form" method="post" action="index.html">
+         <h2 class="feedback__title">Feedback form</h2>
 
-         <button class="feedback__close" type="button">
-           <img src="/images/img_icon_close.svg" alt="Crest icon">
-         </button>
+         <!-- Form -->
+         <form class="feedback__form" method="post" action="index.html">
 
-         <fieldset class="feedback__field">
+           <button class="feedback__close" type="button">
+           </button>
 
-           <label for="name" class="feedback__label">Name</label>
-           <input class="feedback__input" id="name" type="text" name="name" value="" placeholder="Ivan Ivanov" required>
+           <fieldset class="feedback__field">
 
-           <label for="phone" class="feedback__label">Phone</label>
-           <input class="feedback__input" id="phone" type="tel" name="phone" value="" placeholder="+1 800 000 00 00" required>
+             <div class="feedback__wrapper">
 
-           <label for="mail" class="feedback__label">Email</label>
-           <input  class="feedback__input" id="mail" type="email" name="mail" value="" placeholder="hello@inbox.com" required>
+               <label for="name" class="feedback__label">Name</label>
+               <input class="feedback__input" id="name" type="text" name="name" required>
 
-           <label for="message" class="feedback__label">Message</label>
-           <textarea class="feedback__message" id="message" name="message" rows="8" cols="80" required></textarea>
+             </div>
 
-           <input class="feedback__input" type="checkbox" name="agreement" required>
-           <span class="feedback__informationz">By clicking on the button, you consent to the processing of your personal data</span>
+             <div class="feedback__wrapper--half">
 
-           <button class="feedback__button button" type="submit" name="send">Submit</button>
+               <div class="feedback__wrapper feedback__wrapper--margined">
 
-         </fieldset>
+                 <label for="phone" class="feedback__label">Phone</label>
+                 <input class="feedback__input" id="phone" type="tel" name="phone" required>
 
-       </form>
+               </div>
+
+               <div class="feedback__wrapper">
+
+                 <label for="mail" class="feedback__label">Email</label>
+                 <input  class="feedback__input" id="mail" type="email" name="mail" required>
+
+               </div>
+
+             </div>
+
+
+
+             <label for="message" class="feedback__label">Message</label>
+             <textarea class="feedback__message" id="message" name="message" rows="8" cols="80" required></textarea>
+
+             <div class="feedback__information">
+
+               <input class="feedback__input feedback__input--hidden" id="agreement" type="checkbox" name="agreement" required>
+               <label for="agreement" class="feedback__agreement">By clicking on the button, you consent to the processing of your personal data</span>
+
+             </div>
+
+             <button class="feedback__button button" type="submit" name="send">Submit</button>
+
+           </fieldset>
+
+         </form>
+
+       </div>
 
      </section>
 
+     <script type="text/javascript" src="js/main.js"></script>
 
   </body>
 
