@@ -4,6 +4,7 @@
 @import "buttons.scss";
 @import "social.scss";
 @import "normalize.scss";
+@import "common.scss";
 @import "navigation.scss";
 
 .main {
@@ -15,31 +16,29 @@
 }
 
 .contacts__wrap {
-  // Block model
-  width: 1180px;
-  margin: 0 auto;
+
 }
 
 .contacts__title {
   // Block model
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 15px 0;
   // Typography
   font-family: $font-optional-1;
-  font-size: 2.4rem;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .contacts__nav {
   // Block model
-  margin: 0 0 3.125rem 0;
+  margin: 0 0 50px 0;
 }
 
 .contacts__feedback {
   // Position
   display: flex;
   // Block model
-  margin: 0 0 3.75rem 0;
+  margin: 0 0 60px 0;
 }
 
 .contacts__feedback-title {
@@ -52,9 +51,9 @@
   display: flex;
   flex-flow: column;
   // Block model
-  width: 42.5rem;
-  padding: 2.5rem;
-  margin: 0 7.5rem 0 0;
+  width: 680px;
+  padding: 40px;
+  margin: 0 120px 0 0;
   box-sizing: border-box;
   // Stylization
   border: none;
@@ -73,7 +72,7 @@
   flex-flow: column;
   flex: 1;
   // Block model
-  margin: 0 0 1.125rem 0;
+  margin: 0 0 18px 0;
 }
 
 .contacts__feedback-wrapper--half {
@@ -84,25 +83,25 @@
 
 .contacts__feedback-wrapper--margined:first-child {
   // Block model
-  margin: 0 1.125rem 0 0;
+  margin: 0 18px 0 0;
 }
 
 .contacts__feedback-label {
   // Position
   display: block;
   // Block model
-  margin: 0 0 0.3rem 0;
+  margin: 0 0 3px 0;
   // Typography
   color: $color_black;
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 .contacts__feedback-input {
   // Block model
-  padding: 1rem 0 0.7rem 1.25rem;
+  padding: 14px 0 11px 20px;
   box-sizing: border-box;
   // Typography
-  font-size: 1.125rem;
+  font-size: 18px;
   // Stylization
   box-shadow: none;
   border: solid 1px rgba(0,0,0,0.2);
@@ -113,8 +112,8 @@
   position: absolute;
   left: 0;
   // Block model
-  width: 1.18rem;
-  height: 1.18rem;
+  width: 18px;
+  height: 18px;
   // Stylization
   opacity: 0;
   z-index: 1;
@@ -129,12 +128,12 @@
 .contacts__feedback-textarea {
   // Block model
   width: 100%;
-  padding: 0.875rem 0 0 1.125rem;
-  margin: 0 0 1.125rem 0;
+  padding: 14px 0 0 18px;
+  margin: 0 0 18px 0;
   box-sizing: border-box;
   // Typography
   font-family: $font-primary;
-  font-size: 1.125rem;
+  font-size: 18px;
   // Stylization
   box-shadow: none;
   border: solid 1px rgba(0,0,0,0.2);
@@ -151,10 +150,16 @@
   display: inline-block;
   position: relative;
   // Block model
-  padding: 0 0 0 2rem;
-  margin: 0 0 1.125rem 0;
+  padding: 0 0 0 32px;
+  margin: 0 0 18px 0;
   // Typography
-  font-size: 0.875rem;
+  font-size: 14px;
+}
+
+.contacts__feedback-agreement:hover {
+  // Stylization
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .contacts__feedback-agreement::before {
@@ -163,10 +168,10 @@
   position: absolute;
   left: 0;
   // Block model
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 22px;
+  height: 22px;
   // Stylization
-  border-radius: 0.2rem;
+  border-radius: 4px;
   z-index: 1;
   // Animation
   transition: opacity ease-in 0.3s;
@@ -178,12 +183,12 @@
   position: absolute;
   left: 0;
   // Block model
-  width: 1.18rem;
-  height: 1.18rem;
+  width: 18px;
+  height: 18px;
   // Stylization
   opacity: 1;
   border: solid 2px $color_2;
-  border-radius: 0.2rem;
+  border-radius: 4px;
   z-index: 1;
 }
 
@@ -195,9 +200,14 @@
   transition: opacity ease-in 0.3s;
 }
 
+.contacts__feedback-input:checked + .contacts__feedback-agreement {
+  // Stylization
+  text-decoration: underline;
+}
+
 .contacts__feedback-input:checked + .contacts__feedback-agreement::before {
   // Stylization
-  background: url("../../images/img_icon_checked.svg") 0.35rem 0.1rem no-repeat;
+  background: url("../../images/img_icon_checked.svg") 5px 2px no-repeat;
 }
 
 .contacts__feedback-input:focus + .contacts__feedback-agreement::after {
@@ -216,15 +226,15 @@
 
 .contacts__information {
   // Block model
-  margin: 0 0 1.125rem 0;
+  margin: 0 0 18px 0;
 }
 
 .contacts__information--highlighted {
   // Typography
   color: $color_2;
   font-family: $font-optional-1;
-  font-size: 1.625rem;
+  font-size: 26px;
   // font-weight: 300;
-  line-height: 2rem;
+  line-height: 34px;
   text-transform: uppercase;
 }

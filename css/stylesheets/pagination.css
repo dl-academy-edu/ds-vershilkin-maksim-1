@@ -1,14 +1,27 @@
-/* line 28, ../sass/normalize.scss */
+/* line 28, ../sass/common.scss */
 :root {
-  font-size: 1em;
+  font-size: 16px;
 }
 
-/* line 33, ../sass/normalize.scss */
+/* line 33, ../sass/common.scss */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* line 40, ../sass/common.scss */
 body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-/* line 38, ../sass/normalize.scss */
+/* line 3, ../sass/normalize.scss */
+::after, ::before {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/normalize.scss */
 body, p, h1, h2, h3, h4, h5, h6, figure, button {
   margin: 0;
   padding: 0;
@@ -16,75 +29,75 @@ body, p, h1, h2, h3, h4, h5, h6, figure, button {
   background: none;
 }
 
-/* line 47, ../sass/normalize.scss */
+/* line 17, ../sass/normalize.scss */
 a {
   text-decoration: none;
 }
 
-/* line 51, ../sass/normalize.scss */
+/* line 21, ../sass/normalize.scss */
 ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 8, ../sass/pagination.scss */
+/* line 9, ../sass/pagination.scss */
 .pagination__button {
-  width: 0.9rem;
-  height: 1.625rem;
+  width: 13px;
+  height: 19px;
   opacity: 0.3;
   transition: opacity ease-in .3s;
 }
 
-/* line 18, ../sass/pagination.scss */
+/* line 19, ../sass/pagination.scss */
 .pagination__button--previous {
   background: url("../../images/img_icon_pagination_arrow_left.svg") center no-repeat;
-  background-size: 0.9rem;
+  background-size: 13px 19px;
 }
 
-/* line 24, ../sass/pagination.scss */
+/* line 25, ../sass/pagination.scss */
 .pagination__button--next {
   background: url("../../images/img_icon_pagination_arrow_right.svg") center no-repeat;
-  background-size: 0.9rem;
+  background-size: 13px 19px;
 }
 
-/* line 29, ../sass/pagination.scss */
+/* line 30, ../sass/pagination.scss */
 .pagination__button:hover {
   cursor: pointer;
   opacity: 1;
   transition: opacity ease-in .3s;
 }
 
-/* line 37, ../sass/pagination.scss */
+/* line 38, ../sass/pagination.scss */
 .pagination__button:active {
   opacity: 0.5;
 }
 
-/* line 42, ../sass/pagination.scss */
+/* line 43, ../sass/pagination.scss */
 .pagination__list {
   display: flex;
 }
 
-/* line 47, ../sass/pagination.scss */
+/* line 48, ../sass/pagination.scss */
 .pagination__item {
-  margin: 0 2rem;
+  margin: 0 33px;
 }
 
-/* line 52, ../sass/pagination.scss */
+/* line 53, ../sass/pagination.scss */
 .pagination__item-page {
   color: #000000;
   font-family: "Montserrat", "Helvetica", sans-serif;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 60, ../sass/pagination.scss */
+/* line 61, ../sass/pagination.scss */
 .pagination__item-page:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 68, ../sass/pagination.scss */
+/* line 69, ../sass/pagination.scss */
 .pagination__item-page--active {
   color: #C29974;
 }

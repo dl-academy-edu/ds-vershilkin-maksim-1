@@ -1,14 +1,15 @@
 // Buttons styles
+@import "common.scss";
 @import "normalize.scss";
 
 .button {
   // Position
   display: inline-block;
   // Block model
-  padding: 0.5625em 1.375em;
+  padding: 9px 23px;
   // Typography
   color: $color_white;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   // Stylization

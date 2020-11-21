@@ -1,38 +1,8 @@
-$color_black: #000000;
-$color_white: #ffffff;
-$color_grey: #434343;
-$color_light-grey: #666666;
-$color_middle-grey: #A2A2A2;
-$color_dark-grey: #AAAAAA;
-$color_dark-grey-2: #818181;
+// Normalizing style
 
-$color_1: #EEE4DB;
-$color_2: #C29974;
-$color_3: #D6CAC2;
-$color_4: #1E0606;
-
-$color-meant: #DBE4DB;
-$color-wheat: #EADDD3;
-$color-orange: #F8F2DA;
-$color-purple: #D5D4E1;
-$color-blue: rgba(112, 187, 220, 0.2);
-$color-pink: #F3D0DB;
-$color-light-blue: #E5EAF8;
-$color_brown: #C29974;
-
-$font-primary: "Open Sans", "Arial", sans-serif;
-$font-optional-1: "Montserrat", "Helvetica", sans-serif;
-$font-optional-2: "Crimson Text", "Arial", sans-serif;
-
-
-:root {
-  // Typography
-  font-size: 1em;
-}
-
-body {
-  // Typography
-  font-family: $font-primary;
+::after, ::before {
+  margin: 0;
+  padding: 0;
 }
 
 body, p, h1, h2, h3, h4, h5, h6, figure, button {

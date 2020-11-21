@@ -1,14 +1,27 @@
-/* line 28, ../sass/normalize.scss */
+/* line 28, ../sass/common.scss */
 :root {
-  font-size: 1em;
+  font-size: 16px;
 }
 
-/* line 33, ../sass/normalize.scss */
+/* line 33, ../sass/common.scss */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* line 40, ../sass/common.scss */
 body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-/* line 38, ../sass/normalize.scss */
+/* line 3, ../sass/normalize.scss */
+::after, ::before {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/normalize.scss */
 body, p, h1, h2, h3, h4, h5, h6, figure, button {
   margin: 0;
   padding: 0;
@@ -16,60 +29,58 @@ body, p, h1, h2, h3, h4, h5, h6, figure, button {
   background: none;
 }
 
-/* line 47, ../sass/normalize.scss */
+/* line 17, ../sass/normalize.scss */
 a {
   text-decoration: none;
 }
 
-/* line 51, ../sass/normalize.scss */
+/* line 21, ../sass/normalize.scss */
 ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 4, ../sass/header.scss */
+/* line 5, ../sass/header.scss */
 .header {
-  margin: 0 0 2.5rem 0;
-  padding: 2.3rem 0 0 0;
+  margin: 0 0 50px 0;
+  padding: 60px 0 0 0;
 }
 
-/* line 10, ../sass/header.scss */
+/* line 11, ../sass/header.scss */
 .header__wrap {
   display: flex;
   flex-flow: row;
-  width: 1180px;
-  margin: 0 auto;
 }
 
-/* line 19, ../sass/header.scss */
+/* line 17, ../sass/header.scss */
 .header__logo {
   display: flex;
   justify-content: flex-start;
   align-items: end;
-  margin: 0 3.75em 0 0;
+  margin: 0 60px 0 0;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 31, ../sass/header.scss */
+/* line 29, ../sass/header.scss */
 .header__logo:hover {
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 38, ../sass/header.scss */
+/* line 36, ../sass/header.scss */
 .header__logo:active {
   opacity: 0.2;
 }
 
-/* line 43, ../sass/header.scss */
+/* line 41, ../sass/header.scss */
 .header__nav {
   display: flex;
   flex: 1;
   align-items: center;
 }
 
-/* line 50, ../sass/header.scss */
+/* line 48, ../sass/header.scss */
 .header__nav-list {
   display: flex;
   margin: 0;
@@ -77,68 +88,70 @@ ul, li {
   list-style-type: none;
 }
 
-/* line 60, ../sass/header.scss */
+/* line 58, ../sass/header.scss */
 .header__nav-item {
-  margin: 0 1.25em 0 0;
+  margin: -7px 20px 0 0;
 }
 
-/* line 65, ../sass/header.scss */
+/* line 63, ../sass/header.scss */
 .header__nav-link {
   color: #000000;
-  font-size: 0.875rem;
+  font-size: 14px;
   text-transform: uppercase;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 74, ../sass/header.scss */
+/* line 72, ../sass/header.scss */
 .header__nav-link:hover {
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 81, ../sass/header.scss */
+/* line 79, ../sass/header.scss */
 .header__nav-link:active {
   opacity: 0.2;
 }
 
-/* line 86, ../sass/header.scss */
+/* line 84, ../sass/header.scss */
 .header__searching {
   display: flex;
   align-self: center;
-  margin: 0 2em 0 0;
+  margin: -4px 22px 0 0;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 96, ../sass/header.scss */
+/* line 94, ../sass/header.scss */
 .header__searching:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 104, ../sass/header.scss */
+/* line 102, ../sass/header.scss */
 .header__searching:active {
   opacity: 0.2;
 }
 
-/* line 109, ../sass/header.scss */
+/* line 107, ../sass/header.scss */
 .header__link {
   display: flex;
   align-self: center;
+  margin: -5px 0 0 0;
   color: #000000;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 122, ../sass/header.scss */
+/* line 123, ../sass/header.scss */
 .header__link:hover {
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 129, ../sass/header.scss */
+/* line 130, ../sass/header.scss */
 .header__link:active {
   opacity: 0.2;
 }

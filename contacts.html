@@ -14,7 +14,7 @@
 
     <header class="header">
 
-      <div class="header__wrap">
+      <div class="header__wrap container">
 
         <!-- Logo -->
         <figure class="header__logo">
@@ -60,7 +60,7 @@
       <!-- Contacts -->
       <section class="contacts">
 
-        <div class="contacts__wrap">
+        <div class="contacts__wrap container">
 
           <h1 class="contacts__title">Contact us</h1>
 
@@ -86,7 +86,7 @@
                 <div class="contacts__feedback-wrapper">
 
                   <label for="name" class="contacts__feedback-label">Name</label>
-                  <input class="contacts__feedback-input" id="name" type="text" name="name" value="" placeholder="Ivan Ivanov" required>
+                  <input class="contacts__feedback-input" id="name" type="text" name="name" value="" placeholder="Ivan Ivanov" required autofocus>
 
                 </div>
 
@@ -151,7 +151,7 @@
     <!-- Footer -->
     <footer class="footer">
 
-      <div class="footer__wrap">
+      <div class="footer__wrap container">
 
         <!-- Sections -->
         <ul class="footer__sections">
@@ -259,20 +259,35 @@
 
             <span class="footer__information-description">Company rating</span>
 
-            <ul class="footer__information-list">
-              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
-              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
-              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
-              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
-              <li class="footer__information-item"><img class="footer__information-image" src="images/img_icon_star.svg" alt="Star icon"></li>
-            </ul>
+            <div class="footer__information-list">
 
-          </li>
+              <div class="footer__information-wrap">
+
+                <input for="rate-1" class="footer__information-radio footer__information-radio--first" id="rate-1" type="radio" name="rating" value="1">
+                <label class="footer__information-label footer__information-label--first" for="rate-1"></label>
+
+                <input for="rate-2" class="footer__information-radio footer__information-radio--second" id="rate-2" type="radio" name="rating" value="2">
+                <label class="footer__information-label footer__information-label--second" for="rate-2"></label>
+
+                <input for="rate-3" class="footer__information-radio footer__information-radio--third" id="rate-3" type="radio" name="rating" value="3">
+                <label class="footer__information-label footer__information-label--third" for="rate-3"></label>
+
+                <input for="rate-4" class="footer__information-radio footer__information-radio--fourth" id="rate-4" type="radio" name="rating" value="4">
+                <label class="footer__information-label footer__information-label--fourth" for="rate-4"></label>
+
+                <input for="rate-5" class="footer__information-radio footer__information-radio--fifth" id="rate-5" type="radio" name="rating" value="5">
+                <label class="footer__information-label footer__information-label--fifth" for="rate-5"></label>
+
+              </div>
+
+            </div>
+
+         </li>
 
           <li class="footer__information-item">
 
             <span class="footer__information-copyright">
-              Copyright &#169; Dlk <span class="footer__information-dot">&#183;</span> Design life kids
+              Copyright &#169; 2018 Dlk <span class="footer__information-dot">&#183;</span> Design life kids
             </span>
 
           </li>
@@ -280,7 +295,7 @@
           <li class="footer__information-item">
 
             <span class="footer__information-owner">
-              Wed design - <a class="footer__information-developer" href="https://directlinedev.com/">Direct line development</a>
+              <a class="footer__information-developer" href="https://directlinedev.com/">Wed design - Direct line development</a>
             </span>
 
           </li>

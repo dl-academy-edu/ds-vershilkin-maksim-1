@@ -1,4 +1,5 @@
 // Items nagivation
+@import "common.scss";
 @import "normalize.scss";
 
 .pagination {
@@ -7,8 +8,8 @@
 
 .pagination__button {
   // Block model
-  width: 0.9rem;
-  height: 1.625rem;
+  width: 13px;
+  height: 19px;
   // Stylization
   opacity: 0.3;
   // Animation
@@ -18,12 +19,12 @@
 .pagination__button--previous {
   // Stylization
   background: url("../../images/img_icon_pagination_arrow_left.svg") center no-repeat;
-  background-size: 0.9rem;
+  background-size: 13px 19px;
 }
 
 .pagination__button--next {
   background: url("../../images/img_icon_pagination_arrow_right.svg") center no-repeat;
-  background-size: 0.9rem;
+  background-size: 13px 19px;
 }
 
 .pagination__button:hover {
@@ -46,7 +47,7 @@
 
 .pagination__item {
   // Block model
-  margin: 0 2rem;
+  margin: 0 33px;
 }
 
 .pagination__item-page {

@@ -3,6 +3,7 @@
 @import "buttons.scss";
 @import "social.scss";
 @import "normalize.scss";
+@import "common.scss";
 @import "navigation.scss";
 
 .main {
@@ -11,29 +12,26 @@
 
 .catalog {
   // Block model
-  margin: 0 0 3.4rem 0;
+  margin: 0 0 55px 0;
 }
 
 .catalog__wrap {
-  // Block model
-  margin: 0 auto;
-  width: 1180px;
-  box-sizing: border-box;
+
 }
 
 .catalog__title {
   // Block model
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 15px 0;
   // Typography
   font-family: $font-optional-1;
-  font-size: 2.4rem;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .catalog__nav  {
   // Block model
-  margin: 0 0 3.125rem 0;
+  margin: 0 0 50px 0;
 }
 
 .catalog__list {
@@ -48,9 +46,9 @@
   justify-content: center;
   align-items: center;
   // Block model
-  width: 16.875rem;
-  height: 16.875rem;
-  margin: 0 1.25rem 1.25rem 0;
+  width: 280px;
+  height: 270px;
+  margin: 0 20px 20px 0;
   box-sizing: border-box;
 }
 
@@ -71,17 +69,21 @@
 
 .catalog__item--fourth {
   // Block model
-  margin-left: 12.5rem;
+  margin: 0 20px 0 200px;
   // Stylization
   background: $color_purple url("../../images/img_category_4.png") center no-repeat;
 }
 
 .catalog__item--fifth {
+  // Block model
+  margin: 0 20px 0 0;
   // Stylization
   background: $color_pink url("../../images/img_category_5.png") center no-repeat;
 }
 
 .catalog__item--sixth {
+  // Block model
+  margin: 0 20px 0 0;
   // Stylization
   background: $color_light-blue url("../../images/img_category_6.png") center no-repeat;
 }
@@ -90,7 +92,7 @@
   // Typography
   color: $color_white;
   font-family: $font-optional-1;
-  font-size: 1.5rem;
+  font-size: 26px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -109,28 +111,26 @@
 
 .description {
   // Block model
-  margin: 0 0 3.4rem 0;
+  margin: 0 0 55px 0;
 }
 
 .description__wrap {
   // Block model
-  width: 1180px;
-  margin: 0 auto;
-  padding: 0 18.75rem 0 12.5rem;
+  padding: 0 300px 0 200px;
   box-sizing: border-box;
 }
 
 .description__title {
   // Block model
-  margin: 0 0 1.55rem 0;
+  margin: 0 0 25px 0;
   // Typography
   font-family: $font-optional-1;
-  font-size: 2.4rem;
+  font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .description__text {
   // Block model
-  margin: 0 0 1rem 0;
+  margin: 0 0 15px 0;
 }

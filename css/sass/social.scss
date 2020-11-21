@@ -1,4 +1,5 @@
 // Social block footer
+@import "common.scss";
 @import "normalize.scss";
 
 .social {
@@ -13,9 +14,9 @@
   justify-content: center;
   align-items: center;
   // Block model
-  width: 2em;
-  height: 2em;
-  margin: 0 0.6em 0 0;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 0 0;
 }
 
 .social__link {
@@ -42,6 +43,12 @@
   opacity: 0.7;
   // Animation
   transition: opacity ease-in 0.3s;
+}
+
+.social__link:focus {
+  // Stylization
+  opacity: 0.7;
+  outline: none;
 }
 
 .social__link--facebook {

@@ -18,7 +18,7 @@
     let modal = document.querySelector(`.${modalName}`);
     let hidingClass = "feedback--hidden";
 
-    if (e.target === button && e.keyCode == 27 && !modal.classList.contains(hidingClass)) {
+    if (e.keyCode == 27 && !modal.classList.contains(hidingClass)) {
         modal.classList.add(hidingClass);
         document.body.style.overflow = "scroll";
     } else if (e.keyCode == 27 && !modal.classList.contains(hidingClass)) {
@@ -32,10 +32,13 @@
 
     let modal = document.querySelector(`.${modalName}`);
     let hidingClass = "feedback--hidden";
+    let firstInput;
 
     if (e.target.classList.contains(buttonName)) {
-      modal.classList.toggle(hidingClass);
+      modal.classList.remove(hidingClass);
       document.body.style.overflow = "hidden";
+      firstInput = form.querySelectorAll(".feedback__input")[0];
+      firstInput.focus();
     } else if (e.target.classList.contains(closeName)) {
       modal.classList.toggle(hidingClass);
       document.body.style.overflow = "scroll";
