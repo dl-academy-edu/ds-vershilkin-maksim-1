@@ -1,0 +1,105 @@
+@import "header.scss";
+@import "footer.scss";
+@import "buttons.scss";
+@import "social.scss";
+@import "normalize.scss";
+@import "common.scss";
+@import "navigation.scss";
+@import "pagination.scss";
+
+.blog {
+
+}
+
+.blog__wrap {
+
+}
+
+.blog__title {
+  // Block model
+  margin: 0 0 15px 0;
+  // Typography
+  font-family: $font-optional-1;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.blog__nav {
+  // Block model
+  margin: 0 0 50px 0;
+}
+
+.blog__list {
+  // Position
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  // Block model
+  margin: 0 0 50px 0;
+}
+
+.blog__item {
+  // Position
+  flex: 1;
+  // Block model
+  margin: 0 20px 40px 0;
+  // Block model
+  box-sizing: border-box;
+}
+
+.blog__item:nth-child(3n) {
+  // Block model
+  margin: 0 0 40px 0;
+}
+
+.blog__figure {
+  // Block model
+  margin: 0 0 20px 0;
+  box-sizing: border-box;
+  // Stylization
+  overflow: hidden;
+}
+
+.blog__image {
+  // Block model
+  height: 100%;
+}
+
+.blog__date {
+  // Block model
+  margin: 0 0 7px 0;
+  // Typography
+  color: $color_dark-grey-2;
+}
+
+.blog__link-wrap {
+  // Block model
+  margin: 0 0 15px 0;
+}
+
+.blog__link {
+  // Typography
+  color: $color_black;
+  font-size: 24px;
+  font-family: $font-optional-1;
+}
+
+.blog__link:hover {
+  // Typography
+  text-decoration: underline;
+}
+
+.blog__description {
+  // Typography
+  font-size: 18px;
+}
+
+.blog__pagination {
+  // Position
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  // Block model
+  margin: 0 0 60px 0;
+}

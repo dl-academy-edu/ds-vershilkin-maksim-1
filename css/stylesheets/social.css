@@ -1,0 +1,105 @@
+/* line 28, ../sass/common.scss */
+:root {
+  font-size: 16px;
+}
+
+/* line 33, ../sass/common.scss */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* line 40, ../sass/common.scss */
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+/* line 3, ../sass/normalize.scss */
+::after, ::before {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/normalize.scss */
+body, p, h1, h2, h3, h4, h5, h6, figure, button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* line 17, ../sass/normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 21, ../sass/normalize.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 5, ../sass/social.scss */
+.social {
+  display: flex;
+  flex-flow: row;
+}
+
+/* line 11, ../sass/social.scss */
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 0 0;
+}
+
+/* line 22, ../sass/social.scss */
+.social__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #666666;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 33, ../sass/social.scss */
+.social__link:hover {
+  opacity: 0.3;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 41, ../sass/social.scss */
+.social__link:active {
+  opacity: 0.7;
+  transition: opacity ease-in 0.3s;
+}
+
+/* line 48, ../sass/social.scss */
+.social__link:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+/* line 54, ../sass/social.scss */
+.social__link--facebook {
+  background: #666666 url("../../images/img_icon_facebook.svg") center no-repeat;
+}
+
+/* line 59, ../sass/social.scss */
+.social__link--twitter {
+  background: #666666 url("../../images/img_icon_twitter.svg") center no-repeat;
+}
+
+/* line 64, ../sass/social.scss */
+.social__link--pinterest {
+  background: #666666 url("../../images/img_icon_pinterest.svg") center no-repeat;
+}
+
+/* line 69, ../sass/social.scss */
+.social__link--instagram {
+  background: #666666 url("../../images/img_icon_instagram.svg") center no-repeat;
+}

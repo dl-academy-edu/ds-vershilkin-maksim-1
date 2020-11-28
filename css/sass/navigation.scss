@@ -1,0 +1,25 @@
+// Section nagivation
+@import "common.scss";
+
+.section-navigation {
+
+}
+
+.section-navigation__link {
+  // Block model
+  margin: 0 20px 0 0;
+  // Typography
+  color: $color_black;
+  font-size: 20px;
+  font-family: $font-optional-2;
+}
+
+.section-navigation__link--active {
+  // Stylization
+  opacity: 0.5;
+}
+
+.section-navigation__icon {
+  // Block model
+  margin: 0 20px 0 0 ;
+}

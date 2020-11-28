@@ -1,0 +1,133 @@
+@import "common.scss";
+@import "normalize.scss";
+
+// Header block
+.header {
+  // Block model
+  margin: 0 0 50px 0;
+  padding: 60px 0 0 0;
+}
+
+.header__wrap {
+  // Position
+  display: flex;
+  flex-flow: row;
+}
+
+.header__logo {
+  // Position
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  // Block model
+  margin: 0 60px 0 0;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+
+.header__logo:hover {
+  // Stylization
+  opacity: 0.5;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__logo:active {
+  // Stylization
+  opacity: 0.2;
+}
+
+.header__nav {
+  // Position
+  display:flex;
+  flex: 1;
+  align-items: center;
+}
+
+.header__nav-list {
+  // Position
+  display: flex;
+  // Block model
+  margin:0;
+  padding:0;
+  // Stylization
+  list-style-type: none;
+}
+
+.header__nav-item {
+  // Block model
+  margin: -7px 20px 0 0;
+}
+
+.header__nav-link {
+  // Typography
+  color: $color_black;
+  font-size: 14px;
+  text-transform: uppercase;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__nav-link:hover {
+  // Stylization
+  opacity: 0.5;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__nav-link:active {
+  // Stylization
+  opacity: 0.2;
+}
+
+.header__searching {
+  // Position
+  display: flex;
+  align-self: center;
+  // Block model
+  margin: -4px 22px 0 0;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__searching:hover {
+  // Stylization
+  cursor: pointer;
+  opacity: 0.5;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__searching:active {
+  // Stylization
+  opacity: 0.2;
+}
+
+.header__link {
+  // Position
+  display: flex;
+  align-self: center;
+  // Block model
+  margin: -5px 0 0 0;
+  //Typography
+  color: $color_black;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__link:hover {
+  // Stylization
+  opacity: 0.5;
+  //Animation
+  transition: opacity ease-in 0.3s;
+}
+
+.header__link:active {
+  // Stylization
+  opacity: 0.2;
+}

@@ -1,0 +1,136 @@
+@import "header.scss";
+@import "footer.scss";
+@import "buttons.scss";
+@import "social.scss";
+@import "normalize.scss";
+@import "common.scss";
+@import "navigation.scss";
+
+.main {
+
+}
+
+.catalog {
+  // Block model
+  margin: 0 0 55px 0;
+}
+
+.catalog__wrap {
+
+}
+
+.catalog__title {
+  // Block model
+  margin: 0 0 15px 0;
+  // Typography
+  font-family: $font-optional-1;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog__nav  {
+  // Block model
+  margin: 0 0 50px 0;
+}
+
+.catalog__list {
+  // Position
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.catalog__item {
+  // Position
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // Block model
+  width: 280px;
+  height: 270px;
+  margin: 0 20px 20px 0;
+  box-sizing: border-box;
+}
+
+.catalog__item--first {
+  // Stylization
+  background: $color_meant url("../../images/img_category_1.png") center no-repeat;
+}
+
+.catalog__item--second {
+  // Stylization
+  background: $color_wheat url("../../images/img_category_2.png") center no-repeat;
+}
+
+.catalog__item--third {
+  // Stylization
+  background: $color_orange url("../../images/img_category_3.png") center no-repeat;
+}
+
+.catalog__item--fourth {
+  // Block model
+  margin: 0 20px 0 200px;
+  // Stylization
+  background: $color_purple url("../../images/img_category_4.png") center no-repeat;
+}
+
+.catalog__item--fifth {
+  // Block model
+  margin: 0 20px 0 0;
+  // Stylization
+  background: $color_pink url("../../images/img_category_5.png") center no-repeat;
+}
+
+.catalog__item--sixth {
+  // Block model
+  margin: 0 20px 0 0;
+  // Stylization
+  background: $color_light-blue url("../../images/img_category_6.png") center no-repeat;
+}
+
+.catalog__link {
+  // Typography
+  color: $color_white;
+  font-family: $font-optional-1;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: rgba(0,0,0,0.15) 2px 3px 5px;
+}
+
+.catalog__link:hover {
+  // Typography
+  text-decoration: underline;
+}
+
+.catalog__link:active {
+  // Typography
+  text-decoration: underline;
+}
+
+.description {
+  // Block model
+  margin: 0 0 55px 0;
+}
+
+.description__wrap {
+  // Block model
+  padding: 0 300px 0 200px;
+  box-sizing: border-box;
+}
+
+.description__title {
+  // Block model
+  margin: 0 0 25px 0;
+  // Typography
+  font-family: $font-optional-1;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.description__text {
+  // Block model
+  margin: 0 0 15px 0;
+}

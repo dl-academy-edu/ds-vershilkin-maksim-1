@@ -1,0 +1,465 @@
+@import "header.scss";
+@import "footer.scss";
+@import "buttons.scss";
+@import "social.scss";
+@import "normalize.scss";
+@import "common.scss";
+@import "navigation.scss";
+@import "pagination.scss";
+
+.category {
+
+}
+
+.category__wrap {
+
+}
+
+.category__title {
+  // Block model
+  margin: 0 0 15px 0;
+  // Typography
+  font-family: $font-optional-1;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.category__nav {
+  // Block model
+  margin: 0 0 50px 0;
+}
+
+.category__wrap--wide {
+  // Block model
+  margin: 0 0 60px 0;
+  padding: 42px 0;
+  // Stylization
+  background-color: $color-light-blue;
+}
+
+.category__form {
+  // Position
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.category__form-field {
+  // Block model
+  padding: 0;
+  // Stylization
+  border: none;
+}
+
+// Cost
+.category__form-field--first {
+  //Block model
+  margin: 0 108px 0 0;
+}
+
+.category__form-cost {
+  // Block model
+  width: 188px;
+  margin: 0 0 6px 0;
+}
+
+.category__form-cost:hover {
+  //Stylization
+  cursor: pointer;
+}
+
+.category__form-cost-wrap {
+  // Position
+  display: flex;
+}
+
+.category__form-min {
+  // Position
+  display: inline-block;
+  // Block model
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.category__form-max {
+  // Position
+  display: inline-block;
+  // Typography
+  text-align: right;
+  // Block model
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.category__form-field--second {
+  //Block model
+  margin: 0 130px 0 0;
+}
+
+.category__form-legend {
+  // Block model
+  margin: 0 0 15px 0;
+  // Typography
+  font-weight: 700;
+}
+
+
+.category__form-input--hidden {
+  // Position
+  position: absolute;
+  // Block model
+  z-index: 999;
+}
+
+// Color
+.category__form-input--color {
+  // Position
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  // Stylization
+  opacity: 0;
+  border: none;
+}
+
+.category__form-input--color:hover {
+  // Stylization
+  cursor: pointer;
+}
+
+.category__form-color-item {
+  // Position
+  position: relative;
+  // Block model
+  margin: 0 0 18px 0;
+}
+
+.category__form-label--color {
+  // Position
+  position: relative;
+  // Block model
+  padding: 0 0 0 30px;
+}
+
+.category__form-label--color:hover {
+  // Stylization
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.category__form-label--color::before {
+  // Position
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  // Block model
+  width: 19px;
+  height: 19px;
+  z-index: 1;
+  // Stylization
+  outline: 0;
+}
+
+.category__form-label--color::before {
+  // Stylization
+  cursor: pointer;
+}
+
+.category__form-label--color::after {
+  // Position
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  // Block model
+  width: 17px;
+  height: 17px;
+  // Stylization
+  border: solid 2px $color_2;
+  border-radius: 4px;
+}
+
+.category__form-input--color:checked + .category__form-label--color {
+  //Stylization
+  text-decoration: underline;
+}
+
+.category__form-input--color:checked + .category__form-label--color::before {
+  // Stylization
+  background: url("../../images/img_icon_checked.svg") 5px 2px no-repeat;
+}
+
+.category__form-input--color:focus + .category__form-label--color::after   {
+  // Stylization
+  opacity: 0.5;
+}
+
+// Delivery
+.category__form-field--third {
+  // Block model
+  margin: 0 69px 0 0;
+}
+
+.category__form-delivery-item {
+  // Position
+  position: relative;
+  // Block model
+  margin: 0 0 12px 0;
+}
+
+.category__form-input--delivery {
+  // Position
+  position: absolute;
+  top: 0;
+  // Block model
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  // Stylization
+  opacity: 0;
+}
+
+.category__form-input--delivery:hover {
+  // Stylization
+  cursor: pointer;
+}
+
+.category__form-label--delivery {
+  // Position
+  position: relative;
+  // Block model
+  padding: 0 0 0 30px;
+}
+
+.category__form-label--delivery:hover {
+  // Stylization
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.category__form-label--delivery::before {
+  // Position
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: block;
+  // Block model
+  width: 12px;
+  height: 12px;
+  z-index: 1;
+  // Stylization
+  border-radius: 50%;
+}
+
+.category__form-label--delivery::after {
+  // Position
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  // Block model
+  width: 16px;
+  height: 16px;
+  // Stylization
+  border: solid 2px $color_2;
+  border-radius: 50%;
+}
+
+.category__form-input--delivery:checked + .category__form-label--delivery {
+  // Stylization
+  text-decoration: underline;
+}
+
+.category__form-input--delivery:checked + .category__form-label--delivery::before {
+  // Stylization
+  background-color: $color_2;
+}
+
+.category__form-input--delivery:focus + .category__form-label--delivery::after {
+  // Stylization
+  opacity: 0.5;
+}
+
+// Amount
+.category__form-field--fourth {
+  // Block model
+  margin: 0 60px 0 0;
+}
+
+.category__form-amount {
+  // Position
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.category__form-amount-item {
+  // Position
+  position: relative;
+  // Block model
+  width: 80px;
+}
+
+.category__form-input--amount {
+  // Block model
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  // Typography
+  font-size: 16px;
+  font-family: $font-primary;
+  text-align: center;
+  // Stylization
+  opacity: 0;
+  border: none;
+}
+
+.category__form-input--amount:checked + .category__form-label--amount {
+  // Stylization
+  background-color: $color_pink;
+  // Animation
+  transition: opacity ease-in .3s;
+}
+
+.category__form-input--amount:focus + .category__form-label--amount {
+  // Stylization
+  opacity: 0.5;
+  // Animation
+  transition: opacity ease-in .3s;
+}
+
+.category__form-input--amount:hover {
+    // Stylization
+    cursor: pointer;
+    // Animation
+    transition: opacity ease-in .3s;
+}
+
+.category__form-label--amount {
+  // Position
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // Block model
+  padding: 7px 0 6px 0;
+  // Stylization
+  background-color: $color_white;
+  // Animation
+  transition: opacity ease-in .3s;
+}
+
+.category__form-input--amount:hover + .category__form-label--amount {
+  // Stylization
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: $color_pink;
+  // Animation
+  transition: opacity ease-in .3s;
+}
+
+.category__form-submit {
+  margin: 37px 0 0 0;
+}
+
+// Items list
+.category__list {
+  // Position
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.catalog__item {
+  // Position
+  position: relative;
+  // Block model
+  width: 30%;
+  margin: 0 20px 20px 0;
+  border-box: box-sizing;
+}
+
+.catalog__item:nth-child(3) {
+  // Block model
+  margin: 0 0 20px 0;
+}
+
+.catalog__link {
+  // Position
+  position: relative;
+  display: flex;
+  flex-flow:column;
+  justify-content: center;
+  // Typography
+  color: $color_black;
+}
+
+.catalog__more {
+  // Position
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 89px;
+  left: 25%;
+  right: 25%;
+  // Block model
+  width: 207px;
+  padding: 82px 0 96px;
+  // Typography
+  color: $color_black;
+  font-family: $font-optional-1;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  // Stylization
+  opacity: 0;
+  background: rgba(229,234,248,0.9);
+  //Animation
+  transition: opacity ease-in .3s;
+}
+
+.catalog__more:hover {
+  // Stylization
+  opacity: 1;
+  //Animation
+  transition: opacity ease-in .3s;
+}
+
+.catalog__more:active {
+  // Stylization
+  opacity: 1;
+  background: rgba(229,234,248,0.67);
+}
+
+.catalog__name {
+  // Block model
+  margin: 0 0 15px 0;
+  // Typography
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog__price {
+  // Block model
+  margin: 0 0 25px 0;
+  // Typography
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.category__pagination {
+  // Position
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  // Block model
+  margin: 0 0 60px 0;
+}
