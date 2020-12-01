@@ -1,6 +1,5 @@
 // Buttons styles
 @import "common.scss";
-@import "normalize.scss";
 
 .button {
   // Position
@@ -31,4 +30,9 @@
   opacity: 0.5;
   // Animation
   transition: background-color ease-in 0.3s, opacity ease-in 0.3s;
+}
+
+.button:focus {
+  // Stylization
+  outline: solid 1px $color_brown;
 }

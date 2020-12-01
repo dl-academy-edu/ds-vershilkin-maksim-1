@@ -1,59 +1,27 @@
-/* line 28, ../sass/common.scss */
 :root {
   font-size: 16px;
 }
 
-/* line 33, ../sass/common.scss */
 .container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 32px;
 }
 
-/* line 40, ../sass/common.scss */
 body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-/* line 3, ../sass/normalize.scss */
-::after, ::before {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 8, ../sass/normalize.scss */
-body, p, h1, h2, h3, h4, h5, h6, figure, button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-}
-
-/* line 17, ../sass/normalize.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 21, ../sass/normalize.scss */
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-/* line 5, ../sass/header.scss */
 .header {
   margin: 0 0 50px 0;
   padding: 60px 0 0 0;
 }
 
-/* line 11, ../sass/header.scss */
 .header__wrap {
   display: flex;
   flex-flow: row;
 }
 
-/* line 17, ../sass/header.scss */
 .header__logo {
   display: flex;
   justify-content: flex-start;
@@ -62,25 +30,21 @@ ul, li {
   transition: opacity ease-in 0.3s;
 }
 
-/* line 29, ../sass/header.scss */
 .header__logo:hover {
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 36, ../sass/header.scss */
 .header__logo:active {
   opacity: 0.2;
 }
 
-/* line 41, ../sass/header.scss */
 .header__nav {
   display: flex;
   flex: 1;
   align-items: center;
 }
 
-/* line 48, ../sass/header.scss */
 .header__nav-list {
   display: flex;
   margin: 0;
@@ -88,12 +52,10 @@ ul, li {
   list-style-type: none;
 }
 
-/* line 58, ../sass/header.scss */
 .header__nav-item {
   margin: -7px 20px 0 0;
 }
 
-/* line 63, ../sass/header.scss */
 .header__nav-link {
   color: #000000;
   font-size: 14px;
@@ -101,38 +63,33 @@ ul, li {
   transition: opacity ease-in 0.3s;
 }
 
-/* line 72, ../sass/header.scss */
 .header__nav-link:hover {
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 79, ../sass/header.scss */
 .header__nav-link:active {
   opacity: 0.2;
 }
 
-/* line 84, ../sass/header.scss */
 .header__searching {
   display: flex;
   align-self: center;
   margin: -4px 22px 0 0;
+  font-size: 0;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 94, ../sass/header.scss */
 .header__searching:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 102, ../sass/header.scss */
 .header__searching:active {
   opacity: 0.2;
 }
 
-/* line 107, ../sass/header.scss */
 .header__link {
   display: flex;
   align-self: center;
@@ -145,13 +102,13 @@ ul, li {
   transition: opacity ease-in 0.3s;
 }
 
-/* line 123, ../sass/header.scss */
 .header__link:hover {
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 130, ../sass/header.scss */
 .header__link:active {
   opacity: 0.2;
 }
+
+/*# sourceMappingURL=header.css.map */

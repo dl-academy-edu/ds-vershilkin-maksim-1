@@ -1,6 +1,5 @@
 // Items nagivation
 @import "common.scss";
-@import "normalize.scss";
 
 .pagination {
 
@@ -10,6 +9,8 @@
   // Block model
   width: 13px;
   height: 19px;
+  // Typography
+  font-size: 0;
   // Stylization
   opacity: 0.3;
   // Animation
@@ -69,4 +70,9 @@
 .pagination__item-page--active {
   // Typography
   color: $color_brown;
+}
+
+.pagination__item-span {
+  // Typography
+  font-size: 0;
 }

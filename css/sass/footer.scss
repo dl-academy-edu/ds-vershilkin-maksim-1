@@ -1,6 +1,5 @@
 // Footer
 @import "common.scss";
-@import "normalize.scss";
 
 .footer {
   // Block model
@@ -213,11 +212,6 @@
   // Stylization
   overflow: hidden;
   clip: rect(0 0 0 0);
-}
-
-.footer__information-label:focus {
-  //Stylization
-  outline: solid 1px red;
 }
 
 .footer__information-label {

@@ -6,8 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/css/stylesheets/font-name.css">
+    <link rel="stylesheet" href="/css/stylesheets/common.css">
+    <link rel="stylesheet" href="/css/stylesheets/buttons.css">
+    <link rel="stylesheet" href="/css/stylesheets/social.css">
+    <link rel="stylesheet" href="/css/stylesheets/feedback.css">
+    <link rel="stylesheet" href="/css/stylesheets/header.css">
+    <link rel="stylesheet" href="/css/stylesheets/navigation.css">
+    <link rel="stylesheet" href="/css/stylesheets/pagination.css">
+    <link rel="stylesheet" href="/css/stylesheets/footer.css">
     <link rel="stylesheet" href="/css/stylesheets/category.css">
-    <title>Main page</title>
+    <title>Category</title>
   </head>
 
   <body>
@@ -68,9 +78,7 @@
            <nav class="category__nav section-navigation">
 
              <a class="section-navigation__link" href="/">Home</a>
-             <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon" width="8" height="12">
              <a class="section-navigation__link" href="/catalog.html">Catalog</a>
-             <img class="section-navigation__icon" src="/images/img_icon_nav_arrow.svg" alt="Arrow icon" width="8" height="12">
              <a class="section-navigation__link section-navigation__link--active" href="#">Toys</a>
 
            </nav>
@@ -292,24 +300,24 @@
            <!-- Pagination -->
            <div class="category__pagination pagination">
 
-             <button class="pagination__button pagination__button--previous" type="button" name="previous"></button>
+             <button class="pagination__button pagination__button--previous" type="button" name="previous">The previous page of toys</button>
 
              <ul class="pagination__list">
                <li class="pagination__item pagination__item--active">
-                 <a class="pagination__item-page pagination__item-page--active" href="#">1</a>
+                 <a class="pagination__item-page pagination__item-page--active" href="#"><span class="pagination__item-span">Page</span> 1</a>
                </li>
                <li class="pagination__item">
-                 <a class="pagination__item-page" href="#">2</a>
+                 <a class="pagination__item-page" href="#"><span class="pagination__item-span">Page</span> 2</a>
                </li>
                <li class="pagination__item">
-                 <a class="pagination__item-page" href="#">3</a>
+                 <a class="pagination__item-page" href="#"><span class="pagination__item-span">Page</span> 3</a>
                </li>
                <li class="pagination__item">
-                 <a class="pagination__item-page" href="#">4</a>
+                 <a class="pagination__item-page" href="#"><span class="pagination__item-span">Page</span> 4</a>
                </li>
              </ul>
 
-             <button class="pagination__button pagination__button--next" type="button" name="next"></button>
+             <button class="pagination__button pagination__button--next" type="button" name="next">The next page of toys</button>
 
            </div>
 
@@ -434,19 +442,19 @@
 
                <div class="footer__information-wrap">
 
-                 <input for="rate-1" class="footer__information-radio footer__information-radio--first" id="rate-1" type="radio" name="rating" value="1">
+                 <input class="footer__information-radio footer__information-radio--first" id="rate-1" type="radio" name="rating" value="1">
                  <label class="footer__information-label footer__information-label--first" for="rate-1"></label>
 
-                 <input for="rate-2" class="footer__information-radio footer__information-radio--second" id="rate-2" type="radio" name="rating" value="2">
+                 <input class="footer__information-radio footer__information-radio--second" id="rate-2" type="radio" name="rating" value="2">
                  <label class="footer__information-label footer__information-label--second" for="rate-2"></label>
 
-                 <input for="rate-3" class="footer__information-radio footer__information-radio--third" id="rate-3" type="radio" name="rating" value="3">
+                 <input class="footer__information-radio footer__information-radio--third" id="rate-3" type="radio" name="rating" value="3">
                  <label class="footer__information-label footer__information-label--third" for="rate-3"></label>
 
-                 <input for="rate-4" class="footer__information-radio footer__information-radio--fourth" id="rate-4" type="radio" name="rating" value="4">
+                 <input class="footer__information-radio footer__information-radio--fourth" id="rate-4" type="radio" name="rating" value="4">
                  <label class="footer__information-label footer__information-label--fourth" for="rate-4"></label>
 
-                 <input for="rate-5" class="footer__information-radio footer__information-radio--fifth" id="rate-5" type="radio" name="rating" value="5">
+                 <input class="footer__information-radio footer__information-radio--fifth" id="rate-5" type="radio" name="rating" value="5">
                  <label class="footer__information-label footer__information-label--fifth" for="rate-5"></label>
 
                </div>

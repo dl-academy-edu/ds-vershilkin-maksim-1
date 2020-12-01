@@ -1,10 +1,5 @@
-@import "header.scss";
-@import "footer.scss";
-@import "buttons.scss";
-@import "social.scss";
-@import "normalize.scss";
+// Main page
 @import "common.scss";
-@import "feedback.scss";
 
 // Slider
 .slider {
@@ -21,7 +16,7 @@
   // Block model
   padding: 0;
   // Stylization
-  background: linear-gradient(0deg,$color_wheat 0%, $color_wheat 83%, transparent 83%,transparent 100%);
+  background: linear-gradient(0deg, $color_wheat 0%, $color_wheat 83%, transparent 83%,transparent 100%);
   // background-image: url("../../images/img_slide_1.png");
 }
 
@@ -97,6 +92,11 @@
   //Stylization
   opacity: 0.6;
   background: $color_4;
+}
+
+.slider__nav-button:focus {
+  // Stylization
+  outline: solid 1px $color_brown;
 }
 
 .slider__collection {
@@ -247,10 +247,27 @@
 .categories__button {
   // Position
   display: inline;
+  // Typography
+  font-size: 0;
   // Block model
   width: 37px;
   height: 37px;
   background: $color-blue;
+  // Animation
+  transition: box-shadow ease-in .3s;
+}
+
+.categories__button:hover {
+  // Stylization
+  cursor: pointer;
+  box-shadow: 2px 3px 5px $color_light-blue;
+  // Animation
+  transition: box-shadow ease-in .3s;
+}
+
+.categories__button:active {
+  // Stylization
+  box-shadow: none;
 }
 
 .categories__button--left {
@@ -440,6 +457,18 @@
   // Block model
   width: 1180px;
   margin: 0 auto;
+}
+
+.about__title {
+  // Posisiton
+  position: absolute;
+  // Block model
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  // Stylization
+  overflow:hidden;
 }
 
 .about__information {

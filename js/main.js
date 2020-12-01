@@ -2,20 +2,19 @@
 
 (function main() {
 
-  let element = "feedback";
+  let elm = "feedback";
   let buttonName = "slider__button";
-  let modalName = "feedback";
   let closeName = "feedback__close";
 
   let button = document.querySelector(`.${buttonName}`);
-  let form = document.querySelector(`.${element}`);
+  let form = document.querySelector(`.${elm}`);
 
   button.addEventListener("click", modal, false);
   form.addEventListener("click", modal, false);
 
   document.body.addEventListener("keydown", function(e) {
 
-    let modal = document.querySelector(`.${modalName}`);
+    let modal = document.querySelector(`.${elm}`);
     let hidingClass = "feedback--hidden";
 
     if (e.keyCode == 27 && !modal.classList.contains(hidingClass)) {
@@ -30,7 +29,7 @@
 
   function modal(e) {
 
-    let modal = document.querySelector(`.${modalName}`);
+    let modal = document.querySelector(`.${elm}`);
     let hidingClass = "feedback--hidden";
     let firstInput;
 
