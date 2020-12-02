@@ -175,7 +175,7 @@ body {
   height: 16px;
   margin: 0;
   padding: 0;
-  font-size: inherit;
+  font-size: 0;
   opacity: 1;
   overflow: hidden;
   appearance: none;

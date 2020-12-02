@@ -73,6 +73,7 @@ ul, li {
   position: absolute;
   top: 0;
   right: -25px;
+  font-size: 0;
   width: 16px;
   height: 16px;
   background: url("../../images/img_icon_close.svg") center no-repeat;
