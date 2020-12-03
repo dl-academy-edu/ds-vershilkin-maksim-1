@@ -1,5 +1,6 @@
 // Feedback form
 @import "common.scss";
+@import "font-name.scss";
 @import "normalize.scss";
 
 .feedback {
@@ -54,6 +55,8 @@
   position: absolute;
   top: 0;
   right: -25px;
+  // Typography
+  font-size: 0;
   // Block model
   width: 16px;
   height: 16px;

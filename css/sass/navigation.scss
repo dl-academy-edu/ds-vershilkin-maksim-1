@@ -6,20 +6,42 @@
 }
 
 .section-navigation__link {
+  // Position
+  position: relative;
   // Block model
-  margin: 0 20px 0 0;
+  margin: 0 48px 0 0;
   // Typography
   color: $color_black;
   font-size: 20px;
   font-family: $font-optional-2;
 }
 
+.section-navigation__link::after {
+  // Position
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: -28px;
+  // Block model
+  width: 8px;
+  height: 12px;
+  // Stylization
+  background: url("../../images/img_icon_nav_arrow.svg") center no-repeat;
+}
+
+.section-navigation__link:hover::after {
+  // Stylization
+  cursor: auto;
+}
+
 .section-navigation__link--active {
+  // Block model
+  margin: 0;
   // Stylization
   opacity: 0.5;
 }
 
-.section-navigation__icon {
-  // Block model
-  margin: 0 20px 0 0 ;
+.section-navigation__link--active::after {
+  // Position
+  display: none;
 }

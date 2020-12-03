@@ -1,34 +1,46 @@
-/* line 28, ../sass/common.scss */
 :root {
   font-size: 16px;
 }
 
-/* line 33, ../sass/common.scss */
 .container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 32px;
 }
 
-/* line 40, ../sass/common.scss */
 body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-/* line 8, ../sass/navigation.scss */
 .section-navigation__link {
-  margin: 0 20px 0 0;
+  position: relative;
+  margin: 0 48px 0 0;
   color: #000000;
   font-size: 20px;
-  font-family: "Crimson Text", "Georgia", sans-serif;
+  font-family: "Crimson Text", "Georgia", serif;
 }
 
-/* line 17, ../sass/navigation.scss */
+.section-navigation__link::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -28px;
+  width: 8px;
+  height: 12px;
+  background: url("../../images/img_icon_nav_arrow.svg") center no-repeat;
+}
+
+.section-navigation__link:hover::after {
+  cursor: auto;
+}
+
 .section-navigation__link--active {
+  margin: 0;
   opacity: 0.5;
 }
 
-/* line 22, ../sass/navigation.scss */
-.section-navigation__icon {
-  margin: 0 20px 0 0;
+.section-navigation__link--active::after {
+  display: none;
 }
+
+/*# sourceMappingURL=navigation.css.map */

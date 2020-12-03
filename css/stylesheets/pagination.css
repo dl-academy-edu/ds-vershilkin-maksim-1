@@ -1,103 +1,71 @@
-/* line 28, ../sass/common.scss */
 :root {
   font-size: 16px;
 }
 
-/* line 33, ../sass/common.scss */
 .container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 32px;
 }
 
-/* line 40, ../sass/common.scss */
 body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-/* line 3, ../sass/normalize.scss */
-::after, ::before {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 8, ../sass/normalize.scss */
-body, p, h1, h2, h3, h4, h5, h6, figure, button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-}
-
-/* line 17, ../sass/normalize.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 21, ../sass/normalize.scss */
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-/* line 9, ../sass/pagination.scss */
 .pagination__button {
   width: 13px;
   height: 19px;
+  font-size: 0;
   opacity: 0.3;
-  transition: opacity ease-in .3s;
+  transition: opacity ease-in 0.3s;
 }
 
-/* line 19, ../sass/pagination.scss */
 .pagination__button--previous {
   background: url("../../images/img_icon_pagination_arrow_left.svg") center no-repeat;
   background-size: 13px 19px;
 }
 
-/* line 25, ../sass/pagination.scss */
 .pagination__button--next {
   background: url("../../images/img_icon_pagination_arrow_right.svg") center no-repeat;
   background-size: 13px 19px;
 }
 
-/* line 30, ../sass/pagination.scss */
 .pagination__button:hover {
   cursor: pointer;
   opacity: 1;
-  transition: opacity ease-in .3s;
+  transition: opacity ease-in 0.3s;
 }
 
-/* line 38, ../sass/pagination.scss */
 .pagination__button:active {
   opacity: 0.5;
 }
 
-/* line 43, ../sass/pagination.scss */
 .pagination__list {
   display: flex;
 }
 
-/* line 48, ../sass/pagination.scss */
 .pagination__item {
   margin: 0 33px;
 }
 
-/* line 53, ../sass/pagination.scss */
 .pagination__item-page {
   color: #000000;
   font-family: "Montserrat", "Helvetica", sans-serif;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 61, ../sass/pagination.scss */
 .pagination__item-page:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 69, ../sass/pagination.scss */
 .pagination__item-page--active {
   color: #C29974;
 }
+
+.pagination__item-span {
+  font-size: 0;
+}
+
+/*# sourceMappingURL=pagination.css.map */

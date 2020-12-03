@@ -1,3 +1,6 @@
+// Common styles
+@import "font-name.scss";
+
 $color_black: #000000;
 $color_white: #ffffff;
 $color_grey: #434343;
@@ -19,11 +22,6 @@ $color-blue: rgba(112, 187, 220, 0.2);
 $color-pink: #F3D0DB;
 $color-light-blue: #E5EAF8;
 $color_brown: #C29974;
-
-$font-primary: "Open Sans", "Arial", sans-serif;
-$font-optional-1: "Montserrat", "Helvetica", sans-serif;
-$font-optional-2: "Crimson Text", "Georgia", sans-serif;
-
 
 :root {
   // Typography

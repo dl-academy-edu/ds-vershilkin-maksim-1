@@ -1,60 +1,28 @@
-/* line 28, ../sass/common.scss */
 :root {
   font-size: 16px;
 }
 
-/* line 33, ../sass/common.scss */
 .container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 32px;
 }
 
-/* line 40, ../sass/common.scss */
 body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-/* line 3, ../sass/normalize.scss */
-::after, ::before {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 8, ../sass/normalize.scss */
-body, p, h1, h2, h3, h4, h5, h6, figure, button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-}
-
-/* line 17, ../sass/normalize.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 21, ../sass/normalize.scss */
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-/* line 5, ../sass/footer.scss */
 .footer {
   padding: 100px 0;
   color: #ffffff;
   background-color: #434343;
 }
 
-/* line 17, ../sass/footer.scss */
 .footer__sections {
   display: flex;
   margin: 0 0 23px 0;
 }
 
-/* line 24, ../sass/footer.scss */
 .footer__section {
   display: flex;
   flex-flow: column;
@@ -63,12 +31,10 @@ ul, li {
   box-sizing: border-box;
 }
 
-/* line 34, ../sass/footer.scss */
 .footer__section:last-of-type {
   margin: 0;
 }
 
-/* line 39, ../sass/footer.scss */
 .footer__section-title {
   margin: 0 0 21px 0;
   padding: 0 0 23px 0;
@@ -76,43 +42,36 @@ ul, li {
   border-bottom: solid 1px #666666;
 }
 
-/* line 49, ../sass/footer.scss */
 .footer__section:nth-of-type(3) > .footer__section-title {
   margin: 0 0 24px 0;
 }
 
-/* line 54, ../sass/footer.scss */
 .footer__section-form {
   margin: 0 0 25px 0;
   align-items: flex-start;
 }
 
-/* line 60, ../sass/footer.scss */
 .footer__section-link {
   color: #ffffff;
   line-height: 37px;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 68, ../sass/footer.scss */
 .footer__section-link:hover {
   opacity: 0.5;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 75, ../sass/footer.scss */
 .footer__section-link:active {
   opacity: 0.2;
   transition: opacity ease-in 0.3s;
 }
 
-/* line 82, ../sass/footer.scss */
 .footer__section-form {
   display: flex;
   margin: 0 0 25px 0;
 }
 
-/* line 89, ../sass/footer.scss */
 .footer__section-input {
   width: 100%;
   padding: 9px 0 9px 15px;
@@ -122,18 +81,16 @@ ul, li {
   font-family: "Open Sans", "Arial", sans-serif;
   border: solid 1px #666666;
   background-color: #666666;
-  transition: border ease-in .3s;
+  transition: border ease-in 0.3s;
 }
 
-/* line 105, ../sass/footer.scss */
 .footer__section-input:focus,
 .footer__section-input:active {
   outline: 0;
   border: solid 1px #ffffff;
-  transition: border ease-in .3s;
+  transition: border ease-in 0.3s;
 }
 
-/* line 114, ../sass/footer.scss */
 .footer__section-button {
   margin: 0 0 0 -1px;
   width: auto;
@@ -149,12 +106,10 @@ ul, li {
   background-color: #000000;
 }
 
-/* line 132, ../sass/footer.scss */
 .footer__section-button:hover {
   cursor: pointer;
 }
 
-/* line 137, ../sass/footer.scss */
 .footer__information {
   display: flex;
   flex-flow: row;
@@ -162,7 +117,6 @@ ul, li {
   border-top: solid 1px #ffffff;
 }
 
-/* line 147, ../sass/footer.scss */
 .footer__information-item {
   display: flex;
   flex-flow: row;
@@ -170,28 +124,24 @@ ul, li {
   align-items: center;
   margin: 0 20px 0 0;
   box-sizing: border-box;
-  transition: color ease-in .3s;
+  transition: color ease-in 0.3s;
 }
 
-/* line 160, ../sass/footer.scss */
 .footer__information-item:last-of-type {
   margin: 0;
 }
 
-/* line 165, ../sass/footer.scss */
 .footer__information-item:nth-of-type(1):hover {
   color: #C29974;
   cursor: pointer;
-  transition: color ease-in .3s;
+  transition: color ease-in 0.3s;
 }
 
-/* line 174, ../sass/footer.scss */
 .footer__information-description {
   margin: 0 25px 0 0;
   text-transform: capitalize;
 }
 
-/* line 181, ../sass/footer.scss */
 .footer__information-list {
   display: flex;
   width: 112px;
@@ -200,7 +150,6 @@ ul, li {
   background-size: 14px auto;
 }
 
-/* line 196, ../sass/footer.scss */
 .footer__information-wrap {
   position: relative;
   display: flex;
@@ -209,7 +158,6 @@ ul, li {
   align-items: center;
 }
 
-/* line 205, ../sass/footer.scss */
 .footer__information-radio {
   position: absolute;
   top: 0;
@@ -220,12 +168,6 @@ ul, li {
   clip: rect(0 0 0 0);
 }
 
-/* line 218, ../sass/footer.scss */
-.footer__information-label:focus {
-  outline: solid 1px red;
-}
-
-/* line 223, ../sass/footer.scss */
 .footer__information-label {
   position: absolute;
   top: 0;
@@ -233,19 +175,17 @@ ul, li {
   height: 16px;
   margin: 0;
   padding: 0;
-  font-size: inherit;
+  font-size: 0;
   opacity: 1;
   overflow: hidden;
   appearance: none;
 }
 
-/* line 240, ../sass/footer.scss */
 .footer__information-label:active {
   background: url("../../images/img_icon_star.svg") left center no-repeat, url("../../images/img_icon_star.svg") 20px center no-repeat, url("../../images/img_icon_star.svg") 40px center no-repeat, url("../../images/img_icon_star.svg") 60px center no-repeat, url("../../images/img_icon_star.svg") 80px center no-repeat;
   filter: brightness(0.8);
 }
 
-/* line 250, ../sass/footer.scss */
 .footer__information-radio:checked + .footer__information-label,
 .footer__information-label:hover {
   cursor: pointer;
@@ -253,53 +193,47 @@ ul, li {
   background-size: 14px auto;
 }
 
-/* line 262, ../sass/footer.scss */
 .footer__information-label:hover ~ .footer__information-label {
   background: url("../../images/img_icon_star.svg") left center no-repeat, url("../../images/img_icon_star.svg") 20px center no-repeat, url("../../images/img_icon_star.svg") 40px center no-repeat, url("../../images/img_icon_star.svg") 60px center no-repeat, url("../../images/img_icon_star.svg") 80px center no-repeat;
   background-size: 14px auto;
 }
 
-/* line 272, ../sass/footer.scss */
 .footer__information-label--first {
   width: 14px;
   z-index: 5;
 }
 
-/* line 277, ../sass/footer.scss */
 .footer__information-label--second {
   width: 40px;
   z-index: 4;
 }
 
-/* line 282, ../sass/footer.scss */
 .footer__information-label--third {
   width: 60px;
   z-index: 3;
 }
 
-/* line 287, ../sass/footer.scss */
 .footer__information-label--fourth {
   width: 80px;
   z-index: 2;
 }
 
-/* line 292, ../sass/footer.scss */
 .footer__information-label--fifth {
   width: 94px;
   z-index: 1;
 }
 
-/* line 297, ../sass/footer.scss */
 .footer__information-developer {
   color: #A2A2A2;
   text-transform: capitalize;
   transition: color ease-in 0.3s, text-transform ease-in 0.3s;
 }
 
-/* line 305, ../sass/footer.scss */
 .footer__information-developer:hover {
   color: #ffffff;
   text-decoration: underline;
   cursor: pointer;
   transition: color ease-in 0.3s, text-transform ease-in 0.3s;
 }
+
+/*# sourceMappingURL=footer.css.map */

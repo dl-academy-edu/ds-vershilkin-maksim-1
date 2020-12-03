@@ -1,5 +1,5 @@
+// Header
 @import "common.scss";
-@import "normalize.scss";
 
 // Header block
 .header {
@@ -87,6 +87,8 @@
   align-self: center;
   // Block model
   margin: -4px 22px 0 0;
+  // Typography
+  font-size: 0;
   //Animation
   transition: opacity ease-in 0.3s;
 }

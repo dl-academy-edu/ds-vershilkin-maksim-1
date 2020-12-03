@@ -1,10 +1,8 @@
-/* line 3, ../sass/normalize.scss */
 ::after, ::before {
   margin: 0;
   padding: 0;
 }
 
-/* line 8, ../sass/normalize.scss */
 body, p, h1, h2, h3, h4, h5, h6, figure, button {
   margin: 0;
   padding: 0;
@@ -12,14 +10,14 @@ body, p, h1, h2, h3, h4, h5, h6, figure, button {
   background: none;
 }
 
-/* line 17, ../sass/normalize.scss */
 a {
   text-decoration: none;
 }
 
-/* line 21, ../sass/normalize.scss */
 ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
+/*# sourceMappingURL=normalize.css.map */

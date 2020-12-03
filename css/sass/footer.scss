@@ -1,6 +1,5 @@
 // Footer
 @import "common.scss";
-@import "normalize.scss";
 
 .footer {
   // Block model
@@ -215,11 +214,6 @@
   clip: rect(0 0 0 0);
 }
 
-.footer__information-label:focus {
-  //Stylization
-  outline: solid 1px red;
-}
-
 .footer__information-label {
   // Position
   position: absolute;
@@ -230,7 +224,7 @@
   margin: 0;
   padding: 0;
   // Typography
-  font-size: inherit;
+  font-size: 0;
   // Stylization
   opacity: 1;
   overflow: hidden;
